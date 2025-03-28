@@ -113,6 +113,36 @@
   @apply animate-fade-in;
 }
 
+/* Flower Petals Animation */
+@keyframes falling-petal {
+  0% {
+    transform: translateY(-10vh) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes sway {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(30px) rotate(15deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
 .petal {
   position: fixed;
   z-index: 100;

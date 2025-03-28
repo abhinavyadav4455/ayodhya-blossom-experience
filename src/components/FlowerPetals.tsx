@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from 'react';
 
 interface Petal {
@@ -12,7 +13,7 @@ interface Petal {
 const FlowerPetals = () => {
   const [petals, setPetals] = useState<Petal[]>([]);
 
-  const createPetal = () => {
+  const createPetal = (): Petal => {
     const id = Date.now();
     const x = Math.random() * 100; // random x position (0-100%)
     const delay = Math.random() * 5; // random delay (0-5s)
