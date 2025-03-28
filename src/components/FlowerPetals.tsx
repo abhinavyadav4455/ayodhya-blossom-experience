@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from 'react';
 
 interface Petal {
@@ -46,7 +47,7 @@ const FlowerPetals = () => {
     // Add new petals periodically
     const interval = setInterval(() => {
       setPetals(prev => [...prev, createPetal()]);
-    }, 200);
+    }, 300);
 
     // Clean up old petals to prevent memory issues
     const cleanup = setInterval(() => {

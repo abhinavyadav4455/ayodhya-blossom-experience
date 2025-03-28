@@ -19,7 +19,10 @@ export const useAnimateOnScroll = ({
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add(animationClass);
+            // Add a small delay to make the animation more noticeable
+            setTimeout(() => {
+              entry.target.classList.add(animationClass);
+            }, 100);
             observer.unobserve(entry.target);
           }
         });
@@ -33,6 +36,8 @@ export const useAnimateOnScroll = ({
     const currentRef = ref.current;
 
     if (currentRef) {
+      // Force any existing animation class to be removed first
+      currentRef.classList.remove(animationClass);
       observer.observe(currentRef);
     }
 

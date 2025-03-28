@@ -166,16 +166,16 @@
 }
 
 .rose-petal {
-  background-image: url('/images/rose-petal.png');
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 10 C 60 20, 80 30, 50 90 C 20 30, 40 20, 50 10" fill="%23FF6B81"/></svg>');
   filter: hue-rotate(340deg) saturate(1.5);
 }
 
 .marigold-petal {
-  background-image: url('/images/marigold-petal.png');
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 10 C 60 20, 80 30, 50 90 C 20 30, 40 20, 50 10" fill="%23FFA500"/></svg>');
 }
 
 .saffron-petal {
-  background-image: url('/images/marigold-petal.png');
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 10 C 60 20, 80 30, 50 90 C 20 30, 40 20, 50 10" fill="%23FF9933"/></svg>');
   filter: hue-rotate(20deg) saturate(1.8);
 }
 

@@ -9,6 +9,11 @@ import { useAnimateOnScroll } from '../hooks/useAnimateOnScroll';
 const HomePage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    
+    // Force an initial check for elements in viewport
+    setTimeout(() => {
+      window.dispatchEvent(new Event('scroll'));
+    }, 100);
   }, []);
 
   const aboutSectionRef = useAnimateOnScroll({ threshold: 0.2 });
