@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,16 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				ayodhya: {
+					saffron: '#FF9933',
+					gold: '#FFD700',
+					cream: '#FFF6E0',
+					orange: '#FF7722',
+					red: '#C41E3A',
+					maroon: '#800000',
+					yellow: '#FFD68A',
+					light: '#FFF8E7'
 				}
 			},
 			borderRadius: {
@@ -84,11 +95,56 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'falling-petal': {
+					'0%': {
+						transform: 'translateY(-10%) rotate(0deg)',
+						opacity: '0',
+					},
+					'10%': {
+						opacity: '1',
+					},
+					'100%': {
+						transform: 'translateY(100vh) rotate(720deg)',
+						opacity: '0',
+					}
+				},
+				'sway': {
+					'0%, 100%': {
+						transform: 'translateX(0)'
+					},
+					'50%': {
+						transform: 'translateX(20px)'
+					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'scale-up': {
+					'0%': {
+						transform: 'scale(0.95)',
+						opacity: '0'
+					},
+					'100%': {
+						transform: 'scale(1)',
+						opacity: '1'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'falling-petal': 'falling-petal 10s linear forwards',
+				'sway': 'sway 3s ease-in-out infinite',
+				'fade-in': 'fade-in 0.6s ease-out',
+				'scale-up': 'scale-up 0.5s ease-out'
 			}
 		}
 	},

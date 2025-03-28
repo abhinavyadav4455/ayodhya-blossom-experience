@@ -1,92 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 39 100% 97%;
+    --foreground: 30 30% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 39 100% 97%;
+    --card-foreground: 30 30% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 39 100% 97%;
+    --popover-foreground: 30 30% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 30 80% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 40 80% 90%;
+    --secondary-foreground: 30 30% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 40 70% 95%;
+    --muted-foreground: 30 30% 40%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 20 90% 60%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 85% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 30 40% 90%;
+    --input: 30 40% 90%;
+    --ring: 30 80% 50%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 39 100% 97%;
+    --sidebar-foreground: 30 30% 15%;
+    --sidebar-primary: 30 80% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 20 90% 60%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 30 40% 90%;
+    --sidebar-ring: 30 80% 50%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 30 30% 10%;
+    --foreground: 40 70% 90%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 30 30% 10%;
+    --card-foreground: 40 70% 90%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 30 30% 10%;
+    --popover-foreground: 40 70% 90%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 30 80% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 40 30% 20%;
+    --secondary-foreground: 40 70% 90%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 40 30% 20%;
+    --muted-foreground: 40 40% 60%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 20 90% 60%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --border: 40 30% 20%;
+    --input: 40 30% 20%;
+    --ring: 30 80% 50%;
+    
+    --sidebar-background: 30 30% 10%;
+    --sidebar-foreground: 40 70% 90%;
+    --sidebar-primary: 30 80% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 20 90% 60%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 40 30% 20%;
+    --sidebar-ring: 30 80% 50%;
   }
 }
 
@@ -96,6 +94,69 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-ayodhya-light text-foreground font-['Poppins'];
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-['Yatra_One'];
+  }
+}
+
+.hero-section {
+  background-image: linear-gradient(rgba(255, 246, 224, 0.7), rgba(255, 246, 224, 0.7)), url('/images/ram-mandir-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.page-transition {
+  @apply animate-fade-in;
+}
+
+.petal {
+  position: fixed;
+  z-index: 100;
+  pointer-events: none;
+  width: 15px;
+  height: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  will-change: transform;
+}
+
+.rose-petal {
+  background-image: url('/images/rose-petal.png');
+}
+
+.marigold-petal {
+  background-image: url('/images/marigold-petal.png');
+}
+
+.container-custom {
+  @apply container mx-auto px-4 sm:px-6 lg:px-8 py-8;
+}
+
+.section-title {
+  @apply text-3xl sm:text-4xl md:text-5xl text-ayodhya-maroon font-bold mb-6 text-center;
+}
+
+.card-custom {
+  @apply bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1;
+}
+
+.btn-primary {
+  @apply bg-ayodhya-saffron text-white py-2 px-4 rounded-md hover:bg-ayodhya-orange transition-colors duration-300;
+}
+
+.btn-secondary {
+  @apply bg-ayodhya-cream text-ayodhya-maroon border border-ayodhya-maroon py-2 px-4 rounded-md hover:bg-ayodhya-yellow transition-colors duration-300;
+}
+
+.image-container {
+  @apply relative overflow-hidden;
+}
+
+.image-container img {
+  @apply w-full h-full object-cover transition-transform duration-500 hover:scale-105;
 }
