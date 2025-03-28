@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import FlowerPetals from '../components/FlowerPetals';
 import Card from '../components/Card';
-import { arrow-down } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
 
 const HomePage = () => {
   useEffect(() => {

@@ -51,7 +51,7 @@ const HotelsPage = () => {
     },
     {
       id: 5,
-      name: 'Pilgrim's Rest Hotel',
+      name: "Pilgrim's Rest Hotel",
       description: 'Budget-friendly hotel designed specifically for pilgrims with clean rooms and convenient location near major temples.',
       address: 'Temple Road, Ayodhya',
       image: '/images/hotel-5.jpg',

@@ -55,7 +55,7 @@ const RestaurantsPage = () => {
     },
     {
       id: 5,
-      name: 'Raghav's Fine Dining',
+      name: "Raghav's Fine Dining",
       description: 'Upscale restaurant serving premium vegetarian cuisine with elegant ambiance and professional service.',
       address: 'Ram Path, Ayodhya',
       image: '/images/restaurant-5.jpg',

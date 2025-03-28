@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import PageBanner from '../components/PageBanner';
 import FlowerPetals from '../components/FlowerPetals';
@@ -14,7 +13,7 @@ const PrasadPage = () => {
       name: 'Radha-Ram Dana',
       description: 'Sweet cardamom-flavored sugar pellets, offered as a blessed treat to devotees after darshan.',
       image: '/images/prasad-1.jpg',
-      significance: 'Symbolizes the sweetness of devotion and Ram-Sita's blessings.'
+      significance: "Symbolizes the sweetness of devotion and Ram-Sita's blessings."
     },
     {
       id: 2,
