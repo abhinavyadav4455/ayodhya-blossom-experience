@@ -4,12 +4,17 @@ import { useEffect } from 'react';
 import FlowerPetals from '../components/FlowerPetals';
 import Card from '../components/Card';
 import { ArrowDown } from 'lucide-react';
+import { useAnimateOnScroll } from '../hooks/useAnimateOnScroll';
 
 const HomePage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  const aboutSectionRef = useAnimateOnScroll({ threshold: 0.2 });
+  const testimonialsSectionRef = useAnimateOnScroll({ threshold: 0.2 });
+  const featuredSectionRef = useAnimateOnScroll({ threshold: 0.2 });
+  
   return (
     <div className="page-transition pb-12">
       <FlowerPetals />
@@ -35,15 +40,13 @@ const HomePage = () => {
         </div>
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
           <a href="#about-ayodhya" className="text-white">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M12 5v14M5 12l7 7 7-7"/>
-            </svg>
+            <ArrowDown size={24} />
           </a>
         </div>
       </section>
 
       {/* About Ayodhya Section */}
-      <section id="about-ayodhya" className="container-custom">
+      <section id="about-ayodhya" className="container-custom section-animate" ref={aboutSectionRef}>
         <div className="max-w-6xl mx-auto">
           <h2 className="section-title">The Divine City of Ayodhya</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -62,7 +65,7 @@ const HomePage = () => {
               <img 
                 src="/images/ayodhya-overview.jpg" 
                 alt="Ayodhya City" 
-                className="w-full h-auto"
+                className="w-full h-auto transition-transform duration-700 hover:scale-105"
               />
             </div>
           </div>
@@ -70,7 +73,7 @@ const HomePage = () => {
       </section>
 
       {/* Featured Attractions */}
-      <section className="bg-ayodhya-cream py-16">
+      <section className="bg-ayodhya-cream py-16 section-animate" ref={featuredSectionRef}>
         <div className="container mx-auto px-4">
           <h2 className="section-title">Explore Ayodhya</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
@@ -97,10 +100,10 @@ const HomePage = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="container-custom">
+      <section className="container-custom section-animate" ref={testimonialsSectionRef}>
         <h2 className="section-title">Pilgrim Experiences</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
             <div className="flex items-center mb-4">
               <div className="h-12 w-12 rounded-full bg-ayodhya-saffron flex items-center justify-center text-white font-bold text-xl">
                 R
@@ -115,7 +118,7 @@ const HomePage = () => {
             </p>
           </div>
           
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
             <div className="flex items-center mb-4">
               <div className="h-12 w-12 rounded-full bg-ayodhya-saffron flex items-center justify-center text-white font-bold text-xl">
                 M
@@ -130,7 +133,7 @@ const HomePage = () => {
             </p>
           </div>
           
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
             <div className="flex items-center mb-4">
               <div className="h-12 w-12 rounded-full bg-ayodhya-saffron flex items-center justify-center text-white font-bold text-xl">
                 S
@@ -156,7 +159,7 @@ const HomePage = () => {
           </p>
           <Link 
             to="/contact" 
-            className="inline-block bg-ayodhya-saffron hover:bg-ayodhya-orange text-white font-bold py-3 px-8 rounded-md transition-colors duration-300"
+            className="inline-block bg-ayodhya-saffron hover:bg-ayodhya-orange text-white font-bold py-3 px-8 rounded-md transition-all duration-300 hover:scale-105 hover:shadow-lg"
           >
             Contact Us
           </Link>

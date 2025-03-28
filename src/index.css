@@ -126,7 +126,7 @@
     opacity: 1;
   }
   100% {
-    transform: translateY(100vh) rotate(360deg);
+    transform: translateY(100vh) rotate(720deg);
     opacity: 0;
   }
 }
@@ -143,24 +143,84 @@
   }
 }
 
-.petal {
+.flower-petals-container {
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   z-index: 100;
   pointer-events: none;
-  width: 15px;
-  height: 15px;
+  overflow: hidden;
+}
+
+.petal {
+  position: absolute;
+  top: -50px;
+  pointer-events: none;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   will-change: transform;
+  filter: drop-shadow(0 3px 4px rgba(0,0,0,0.1));
 }
 
 .rose-petal {
   background-image: url('/images/rose-petal.png');
+  filter: hue-rotate(340deg) saturate(1.5);
 }
 
 .marigold-petal {
   background-image: url('/images/marigold-petal.png');
+}
+
+.saffron-petal {
+  background-image: url('/images/marigold-petal.png');
+  filter: hue-rotate(20deg) saturate(1.8);
+}
+
+/* Card Animation */
+.card-custom {
+  transition: all 0.5s ease;
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.card-custom.animated {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Section animation */
+.section-animate {
+  transition: all 0.8s ease;
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+.section-animate.animated {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Scale Animation */
+@keyframes scale-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.btn-primary, .btn-secondary {
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  animation: scale-pulse 0.5s ease;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .container-custom {

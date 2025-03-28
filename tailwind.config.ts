@@ -136,6 +136,24 @@ export default {
 						transform: 'scale(1)',
 						opacity: '1'
 					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
+				},
+				'pulse-gentle': {
+					'0%, 100%': {
+						opacity: '1',
+						transform: 'scale(1)'
+					},
+					'50%': {
+						opacity: '0.85',
+						transform: 'scale(1.05)'
+					}
 				}
 			},
 			animation: {
@@ -144,7 +162,9 @@ export default {
 				'falling-petal': 'falling-petal 10s linear forwards',
 				'sway': 'sway 3s ease-in-out infinite',
 				'fade-in': 'fade-in 0.6s ease-out',
-				'scale-up': 'scale-up 0.5s ease-out'
+				'scale-up': 'scale-up 0.5s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+				'pulse-gentle': 'pulse-gentle 3s ease-in-out infinite'
 			}
 		}
 	},
