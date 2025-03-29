@@ -166,23 +166,23 @@
 }
 
 .rose-petal {
-  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 10 C 60 20, 80 30, 50 90 C 20 30, 40 20, 50 10" fill="%23FF6B81"/></svg>');
+  background-image: url('/images/rose-petal.svg');
   filter: hue-rotate(340deg) saturate(1.5);
 }
 
 .marigold-petal {
-  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 10 C 60 20, 80 30, 50 90 C 20 30, 40 20, 50 10" fill="%23FFA500"/></svg>');
+  background-image: url('/images/marigold-petal.svg');
 }
 
 .saffron-petal {
-  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 10 C 60 20, 80 30, 50 90 C 20 30, 40 20, 50 10" fill="%23FF9933"/></svg>');
+  background-image: url('/images/saffron-petal.svg');
   filter: hue-rotate(20deg) saturate(1.8);
 }
 
-/* Card Animation */
+/* Card Animation - Enhanced */
 .card-custom {
-  transition: all 0.5s ease;
-  transform: translateY(20px);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(40px);
   opacity: 0;
 }
 
@@ -191,10 +191,10 @@
   opacity: 1;
 }
 
-/* Section animation */
+/* Section animation - Enhanced */
 .section-animate {
-  transition: all 0.8s ease;
-  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(50px);
   opacity: 0;
 }
 
@@ -211,6 +211,10 @@
   50% {
     transform: scale(1.05);
   }
+}
+
+.animate-scale-up {
+  animation: scale-pulse 0.5s ease;
 }
 
 .btn-primary, .btn-secondary {
@@ -248,5 +252,5 @@
 }
 
 .image-container img {
-  @apply w-full h-full object-cover transition-transform duration-500 hover:scale-105;
+  @apply w-full h-full object-cover transition-transform duration-500 hover:scale-110;
 }

@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import FlowerPetals from '../components/FlowerPetals';
@@ -19,6 +18,7 @@ const HomePage = () => {
   const aboutSectionRef = useAnimateOnScroll({ threshold: 0.2 });
   const testimonialsSectionRef = useAnimateOnScroll({ threshold: 0.2 });
   const featuredSectionRef = useAnimateOnScroll({ threshold: 0.2 });
+  const registrationSectionRef = useAnimateOnScroll({ threshold: 0.2 });
   
   return (
     <div className="page-transition pb-12">
@@ -38,8 +38,8 @@ const HomePage = () => {
             <Link to="/ram-mandir" className="btn-primary text-lg px-8 py-3">
               Explore Ram Mandir
             </Link>
-            <Link to="/travel" className="btn-secondary text-lg px-8 py-3">
-              Plan Your Visit
+            <Link to="/register" className="btn-secondary text-lg px-8 py-3">
+              Register for Yatra
             </Link>
           </div>
         </div>
@@ -77,8 +77,24 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Registration Section */}
+      <section className="bg-ayodhya-cream py-16 section-animate" ref={registrationSectionRef}>
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="section-title">Register for Your Divine Journey</h2>
+          <p className="text-lg max-w-3xl mx-auto mb-8">
+            Plan your sacred pilgrimage to Ayodhya with our dedicated team. Register today to receive updates, assistance with bookings, and special darshan opportunities.
+          </p>
+          <Link 
+            to="/register" 
+            className="btn-primary text-lg px-8 py-3 inline-block"
+          >
+            Register Now
+          </Link>
+        </div>
+      </section>
+
       {/* Featured Attractions */}
-      <section className="bg-ayodhya-cream py-16 section-animate" ref={featuredSectionRef}>
+      <section className="bg-white py-16 section-animate" ref={featuredSectionRef}>
         <div className="container mx-auto px-4">
           <h2 className="section-title">Explore Ayodhya</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
@@ -162,12 +178,20 @@ const HomePage = () => {
           <p className="text-xl max-w-3xl mx-auto mb-8">
             Experience the spiritual essence of Ayodhya and receive the blessings of Lord Ram
           </p>
-          <Link 
-            to="/contact" 
-            className="inline-block bg-ayodhya-saffron hover:bg-ayodhya-orange text-white font-bold py-3 px-8 rounded-md transition-all duration-300 hover:scale-105 hover:shadow-lg"
-          >
-            Contact Us
-          </Link>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Link 
+              to="/contact" 
+              className="inline-block bg-ayodhya-saffron hover:bg-ayodhya-orange text-white font-bold py-3 px-8 rounded-md transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            >
+              Contact Us
+            </Link>
+            <Link 
+              to="/register" 
+              className="inline-block bg-white hover:bg-ayodhya-cream text-ayodhya-maroon font-bold py-3 px-8 rounded-md transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            >
+              Register Now
+            </Link>
+          </div>
         </div>
       </section>
     </div>

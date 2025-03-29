@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import PageBanner from '../components/PageBanner';
 import FlowerPetals from '../components/FlowerPetals';
@@ -6,6 +5,11 @@ import FlowerPetals from '../components/FlowerPetals';
 const AboutPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    
+    // Force an initial check for elements in viewport
+    setTimeout(() => {
+      window.dispatchEvent(new Event('scroll'));
+    }, 100);
   }, []);
 
   const timelineEvents = [
@@ -264,7 +268,7 @@ const AboutPage = () => {
         </section>
         
         {/* Modern Ayodhya */}
-        <section className="max-w-4xl mx-auto">
+        <section className="max-w-4xl mx-auto mb-16">
           <h2 className="text-2xl font-bold text-ayodhya-maroon mb-6 text-center">Ayodhya Today</h2>
           
           <div className="bg-white p-6 rounded-lg shadow-md mb-8">
@@ -283,6 +287,30 @@ const AboutPage = () => {
             <p className="text-lg italic text-ayodhya-maroon">
               "Ayodhya is not merely a geographical location, but a living testament to faith, devotion, and the timeless teachings of Lord Ram that continue to inspire millions across the world."
             </p>
+          </div>
+        </section>
+        
+        {/* Developer Information */}
+        <section className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg mb-8">
+          <h2 className="text-2xl font-bold text-ayodhya-maroon mb-6 text-center">Website Developer</h2>
+          
+          <div className="flex flex-col md:flex-row items-center">
+            <div className="mb-6 md:mb-0 md:mr-8">
+              <div className="w-40 h-40 bg-ayodhya-saffron rounded-full flex items-center justify-center text-white text-4xl font-bold">
+                KV
+              </div>
+            </div>
+            
+            <div>
+              <h3 className="text-xl font-bold mb-2">Kartikey Vishwakarma</h3>
+              <p className="mb-2"><span className="font-semibold">Phone:</span> +91 6394650470</p>
+              <p className="mb-4"><span className="font-semibold">Email:</span> kartikeyvishwakarma@gmail.com</p>
+              <p className="text-gray-700">
+                This website was designed and developed with devotion to Lord Ram and with the goal of making 
+                pilgrimage to Ayodhya accessible to devotees worldwide. The Ayodhya Blessings platform aims to 
+                provide accurate information and resources to enhance the spiritual journey of all visitors.
+              </p>
+            </div>
           </div>
         </section>
       </div>

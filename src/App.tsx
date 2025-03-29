@@ -17,6 +17,7 @@ import TravelPage from "./pages/TravelPage";
 import PrasadPage from "./pages/PrasadPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import RegisterPage from "./pages/RegisterPage";
 
 const queryClient = new QueryClient();
 
@@ -40,6 +41,7 @@ const App = () => (
               <Route path="/prasad" element={<PrasadPage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="/register" element={<RegisterPage />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
