@@ -12,42 +12,42 @@ const PrasadPage = () => {
       id: 1,
       name: 'Radha-Ram Dana',
       description: 'Sweet cardamom-flavored sugar pellets, offered as a blessed treat to devotees after darshan.',
-      image: '/images/prasad-1.jpg',
+      image: '/lovable-uploads/2ec52b14-6110-43c0-8ecd-1ec96dcabe87.png',
       significance: "Symbolizes the sweetness of devotion and Ram-Sita's blessings."
     },
     {
       id: 2,
       name: 'Panjiri',
       description: 'A nutritious mixture of whole wheat flour, ghee, sugar, dry fruits, and aromatic spices.',
-      image: '/images/prasad-2.jpg',
+      image: '/lovable-uploads/2ec52b14-6110-43c0-8ecd-1ec96dcabe87.png',
       significance: 'Provides energy and is considered especially auspicious when received as prasad.'
     },
     {
       id: 3,
       name: 'Laddoo',
       description: 'Sweet spherical balls made from gram flour, ghee, sugar, and nuts, offered to deities.',
-      image: '/images/prasad-3.jpg',
+      image: '/lovable-uploads/2ec52b14-6110-43c0-8ecd-1ec96dcabe87.png',
       significance: 'Represents completeness and perfection in devotion.'
     },
     {
       id: 4,
       name: 'Kheer',
       description: 'Rice pudding prepared with milk, rice, sugar, cardamom, and garnished with nuts.',
-      image: '/images/prasad-4.jpg',
+      image: '/lovable-uploads/2ec52b14-6110-43c0-8ecd-1ec96dcabe87.png',
       significance: 'Symbolizes purity and is often prepared on special occasions.'
     },
     {
       id: 5,
       name: 'Peda',
       description: 'Soft milk-based sweet discs flavored with cardamom and saffron.',
-      image: '/images/prasad-5.jpg',
+      image: '/lovable-uploads/2ec52b14-6110-43c0-8ecd-1ec96dcabe87.png',
       significance: 'Represents the sweetness of divine blessings.'
     },
     {
       id: 6,
       name: 'Chana Prasad',
       description: 'Seasoned chickpeas offered as a savory prasad alternative, especially during certain festivals.',
-      image: '/images/prasad-6.jpg',
+      image: '/lovable-uploads/2ec52b14-6110-43c0-8ecd-1ec96dcabe87.png',
       significance: 'Symbolizes prosperity and abundance.'
     }
   ];
@@ -58,28 +58,28 @@ const PrasadPage = () => {
       name: 'Ram Mandir Special Box',
       contents: 'Contains Radha-Ram Dana, Panjiri, and a small Ram darshan photo',
       price: '₹151',
-      image: '/images/prasad-pack-1.jpg'
+      image: '/lovable-uploads/2ec52b14-6110-43c0-8ecd-1ec96dcabe87.png'
     },
     {
       id: 2,
       name: 'Ayodhya Blessings Deluxe Pack',
       contents: 'Assortment of laddoos, pedas, and Radha-Ram Dana in a decorative box',
       price: '₹251',
-      image: '/images/prasad-pack-2.jpg'
+      image: '/lovable-uploads/2ec52b14-6110-43c0-8ecd-1ec96dcabe87.png'
     },
     {
       id: 3,
       name: 'Family Prasad Combo',
       contents: 'Large quantities of various prasad items suitable for distribution among family',
       price: '₹501',
-      image: '/images/prasad-pack-3.jpg'
+      image: '/lovable-uploads/2ec52b14-6110-43c0-8ecd-1ec96dcabe87.png'
     },
     {
       id: 4,
       name: 'Premium Gift Box',
       contents: 'High-quality assortment of prasad with Ram Mandir memorabilia in a decorative wooden box',
       price: '₹1001',
-      image: '/images/prasad-pack-4.jpg'
+      image: '/lovable-uploads/2ec52b14-6110-43c0-8ecd-1ec96dcabe87.png'
     }
   ];
 
@@ -90,7 +90,7 @@ const PrasadPage = () => {
       <PageBanner 
         title="Sacred Prasad" 
         subtitle="Divine Offerings from Ayodhya" 
-        backgroundImage="/images/prasad-banner.jpg"
+        backgroundImage="/lovable-uploads/2ec52b14-6110-43c0-8ecd-1ec96dcabe87.png"
       />
       
       <div className="container mx-auto px-4">
@@ -104,7 +104,7 @@ const PrasadPage = () => {
         </section>
         
         {/* What is Prasad */}
-        <section className="max-w-4xl mx-auto mb-16 bg-ayodhya-cream p-8 rounded-lg">
+        <section className="max-w-4xl mx-auto mb-16 bg-ayodhya-cream p-8 rounded-lg section-animate">
           <h2 className="text-2xl font-bold text-ayodhya-maroon mb-6 text-center">Understanding Prasad</h2>
           
           <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -121,7 +121,7 @@ const PrasadPage = () => {
             </div>
             <div className="rounded-lg overflow-hidden shadow-md">
               <img 
-                src="/images/prasad-concept.jpg" 
+                src="/lovable-uploads/2ec52b14-6110-43c0-8ecd-1ec96dcabe87.png" 
                 alt="Prasad Offering" 
                 className="w-full h-auto"
               />
@@ -135,7 +135,7 @@ const PrasadPage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {prasadItems.map((item) => (
-              <div key={item.id} className="card-custom h-full flex flex-col">
+              <div key={item.id} className="card-custom h-full flex flex-col section-animate">
                 <div className="image-container h-48">
                   <img 
                     src={item.image} 

@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import PageBanner from '../components/PageBanner';
 import FlowerPetals from '../components/FlowerPetals';
@@ -15,12 +14,12 @@ const RamMandirPage = () => {
       <PageBanner 
         title="Ram Mandir" 
         subtitle="The Divine Abode of Lord Ram" 
-        backgroundImage="/images/ram-mandir-banner.jpg"
+        backgroundImage="/lovable-uploads/35be26df-7393-4556-8be9-40672d27be4d.png"
       />
       
       <div className="container mx-auto px-4">
         {/* Introduction Section */}
-        <section className="max-w-4xl mx-auto mb-16 text-center">
+        <section className="max-w-4xl mx-auto mb-16 text-center section-animate">
           <h2 className="text-3xl font-bold text-ayodhya-maroon mb-6">The Magnificent Temple of Lord Ram</h2>
           <p className="text-lg mb-6">
             The Ram Mandir in Ayodhya is a grand temple dedicated to Lord Ram, built at his birthplace. After centuries of devotion and a long journey, this magnificent temple now stands as a symbol of faith, culture, and architectural brilliance.
@@ -32,7 +31,7 @@ const RamMandirPage = () => {
         
         {/* Temple Architecture */}
         <section className="mb-16">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-center section-animate">
             <div>
               <h2 className="text-2xl font-bold text-ayodhya-maroon mb-4">Architectural Marvel</h2>
               <p className="mb-4">
@@ -47,7 +46,7 @@ const RamMandirPage = () => {
             </div>
             <div className="rounded-lg overflow-hidden shadow-xl">
               <img 
-                src="/images/ram-mandir-architecture.jpg" 
+                src="/lovable-uploads/35be26df-7393-4556-8be9-40672d27be4d.png" 
                 alt="Ram Mandir Architecture" 
                 className="w-full h-auto"
               />
@@ -111,26 +110,26 @@ const RamMandirPage = () => {
         </section>
         
         {/* Gallery */}
-        <section className="mb-16">
+        <section className="mb-16 section-animate">
           <h2 className="text-2xl font-bold text-ayodhya-maroon mb-6 text-center">Temple Gallery</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="rounded-lg overflow-hidden shadow-md">
-              <img src="/images/ram-mandir-1.jpg" alt="Ram Mandir" className="w-full h-64 object-cover" />
+              <img src="/lovable-uploads/35be26df-7393-4556-8be9-40672d27be4d.png" alt="Ram Mandir" className="w-full h-64 object-cover" />
             </div>
             <div className="rounded-lg overflow-hidden shadow-md">
-              <img src="/images/ram-mandir-2.jpg" alt="Ram Mandir Interior" className="w-full h-64 object-cover" />
+              <img src="/lovable-uploads/35be26df-7393-4556-8be9-40672d27be4d.png" alt="Ram Mandir Interior" className="w-full h-64 object-cover" />
             </div>
             <div className="rounded-lg overflow-hidden shadow-md">
-              <img src="/images/ram-mandir-3.jpg" alt="Ram Mandir Aerial View" className="w-full h-64 object-cover" />
+              <img src="/lovable-uploads/35be26df-7393-4556-8be9-40672d27be4d.png" alt="Ram Mandir Aerial View" className="w-full h-64 object-cover" />
             </div>
             <div className="rounded-lg overflow-hidden shadow-md">
-              <img src="/images/ram-mandir-4.jpg" alt="Ram Mandir Ceremony" className="w-full h-64 object-cover" />
+              <img src="/lovable-uploads/e951e0a0-7b70-48a3-843c-f721376b6a80.png" alt="Ram Mandir Idol" className="w-full h-64 object-cover" />
             </div>
             <div className="rounded-lg overflow-hidden shadow-md">
-              <img src="/images/ram-mandir-5.jpg" alt="Ram Mandir Construction" className="w-full h-64 object-cover" />
+              <img src="/lovable-uploads/35be26df-7393-4556-8be9-40672d27be4d.png" alt="Ram Mandir Construction" className="w-full h-64 object-cover" />
             </div>
             <div className="rounded-lg overflow-hidden shadow-md">
-              <img src="/images/ram-mandir-6.jpg" alt="Ram Mandir at Night" className="w-full h-64 object-cover" />
+              <img src="/lovable-uploads/5fbba0ac-ec87-4b26-bf98-1bfbb4f20315.png" alt="Sarayu Ghat" className="w-full h-64 object-cover" />
             </div>
           </div>
         </section>

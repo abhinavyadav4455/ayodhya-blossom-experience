@@ -18,6 +18,8 @@ import PrasadPage from "./pages/PrasadPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import RegisterPage from "./pages/RegisterPage";
+import KanakBhawanPage from "./pages/KanakBhawanPage";
+import SaryuGhatPage from "./pages/SaryuGhatPage";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +35,8 @@ const App = () => (
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/ram-mandir" element={<RamMandirPage />} />
+              <Route path="/kanak-bhawan" element={<KanakBhawanPage />} />
+              <Route path="/saryu-ghat" element={<SaryuGhatPage />} />
               <Route path="/dharmshala" element={<DharmshalaPage />} />
               <Route path="/bhojnalaya" element={<BhojnalayaPage />} />
               <Route path="/restaurants" element={<RestaurantsPage />} />

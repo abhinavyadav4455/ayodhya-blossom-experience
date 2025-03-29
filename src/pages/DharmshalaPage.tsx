@@ -1,7 +1,5 @@
-
 import { useEffect } from 'react';
 import PageBanner from '../components/PageBanner';
-import Card from '../components/Card';
 import FlowerPetals from '../components/FlowerPetals';
 
 const DharmshalaPage = () => {
@@ -15,7 +13,7 @@ const DharmshalaPage = () => {
       name: 'Shri Ram Dharmshala',
       description: 'A traditional dharamshala offering basic accommodations for pilgrims with clean rooms and essential facilities.',
       address: 'Near Ram Mandir, Ayodhya',
-      image: '/images/dharmshala-1.jpg',
+      image: '/lovable-uploads/0a5bc000-941b-4d08-9797-1532b4b8b1c4.png',
       facilities: ['Free meals', 'Dormitory', 'Locker facility', 'Prayer hall']
     },
     {
@@ -23,7 +21,7 @@ const DharmshalaPage = () => {
       name: 'Janaki Saran Dharmshala',
       description: 'Family-friendly dharmshala with private rooms and attached bathrooms for a comfortable pilgrimage experience.',
       address: 'Saket Colony, Ayodhya',
-      image: '/images/dharmshala-2.jpg',
+      image: '/lovable-uploads/0a5bc000-941b-4d08-9797-1532b4b8b1c4.png',
       facilities: ['Private rooms', 'Attached bathrooms', 'Dining hall', 'Temple within premises']
     },
     {
@@ -31,7 +29,7 @@ const DharmshalaPage = () => {
       name: 'Bharat Kund Dharmshala',
       description: 'Located near the historic Bharat Kund, offering peaceful accommodations for spiritual seekers.',
       address: 'Bharat Kund Road, Ayodhya',
-      image: '/images/dharmshala-3.jpg',
+      image: '/lovable-uploads/0a5bc000-941b-4d08-9797-1532b4b8b1c4.png',
       facilities: ['Garden view', 'Meditation area', 'Free breakfast', 'Reading room']
     },
     {
@@ -39,7 +37,7 @@ const DharmshalaPage = () => {
       name: 'Dashrath Mahal Dharmshala',
       description: 'Named after King Dashrath, this dharmshala offers traditional hospitality with modern amenities.',
       address: 'Main Market Road, Ayodhya',
-      image: '/images/dharmshala-4.jpg',
+      image: '/lovable-uploads/0a5bc000-941b-4d08-9797-1532b4b8b1c4.png',
       facilities: ['AC rooms available', 'Generator backup', 'Ayurvedic treatment center', 'Travel assistance']
     },
     {
@@ -47,7 +45,7 @@ const DharmshalaPage = () => {
       name: 'Sarayu Kunj Dharmshala',
       description: 'Riverside dharmshala offering scenic views of the Sarayu River and serene environment for pilgrims.',
       address: 'Sarayu Ghat, Ayodhya',
-      image: '/images/dharmshala-5.jpg',
+      image: '/lovable-uploads/0a5bc000-941b-4d08-9797-1532b4b8b1c4.png',
       facilities: ['River view', 'Ghat access', 'Evening aarti', 'Cultural programs']
     },
     {
@@ -55,7 +53,7 @@ const DharmshalaPage = () => {
       name: 'Hanuman Garhi Dharmshala',
       description: 'Located near the famous Hanuman Garhi temple, offering convenient accommodations for devotees.',
       address: 'Hanuman Garhi Road, Ayodhya',
-      image: '/images/dharmshala-6.jpg',
+      image: '/lovable-uploads/0a5bc000-941b-4d08-9797-1532b4b8b1c4.png',
       facilities: ['Temple view', '24-hour reception', 'Pure vegetarian meals', 'Pilgrim guide services']
     }
   ];
@@ -67,11 +65,10 @@ const DharmshalaPage = () => {
       <PageBanner 
         title="Dharmshala" 
         subtitle="Traditional Pilgrim Accommodations" 
-        backgroundImage="/images/dharmshala-banner.jpg"
+        backgroundImage="/lovable-uploads/0a5bc000-941b-4d08-9797-1532b4b8b1c4.png"
       />
       
       <div className="container mx-auto px-4">
-        {/* Introduction */}
         <section className="max-w-4xl mx-auto mb-16 text-center">
           <h2 className="text-3xl font-bold text-ayodhya-maroon mb-6">Stay in Sacred Simplicity</h2>
           <p className="text-lg">
@@ -80,13 +77,12 @@ const DharmshalaPage = () => {
           </p>
         </section>
         
-        {/* Dharmshala Listings */}
         <section className="mb-16">
           <h2 className="text-2xl font-bold text-ayodhya-maroon mb-8 text-center">Popular Dharmshala Options</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {dharmshalaList.map((dharmshala) => (
-              <div key={dharmshala.id} className="card-custom h-full flex flex-col">
+              <div key={dharmshala.id} className="card-custom h-full flex flex-col section-animate">
                 <div className="image-container h-48">
                   <img 
                     src={dharmshala.image} 
@@ -115,7 +111,6 @@ const DharmshalaPage = () => {
           </div>
         </section>
         
-        {/* Information for Pilgrims */}
         <section className="max-w-4xl mx-auto mb-16 bg-ayodhya-cream p-8 rounded-lg">
           <h2 className="text-2xl font-bold text-ayodhya-maroon mb-6 text-center">Information for Pilgrims</h2>
           
@@ -142,7 +137,6 @@ const DharmshalaPage = () => {
           </div>
         </section>
         
-        {/* Tips for Staying */}
         <section className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-ayodhya-maroon mb-6 text-center">Tips for a Pleasant Stay</h2>
           
