@@ -9,20 +9,20 @@ const SaryuGhatPage = () => {
   }, []);
 
   return (
-    <div className="page-transition pb-12 pt-16">
+    <div className="page-transition pb-8 pt-16">
       <FlowerPetals />
       
       <PageBanner 
         title="Saryu Ghat" 
         subtitle="Sacred Banks of the Holy River" 
-        backgroundImage="/lovable-uploads/5fbba0ac-ec87-4b26-bf98-1bfbb4f20315.png"
+        backgroundImage="/lovable-uploads/2ec52b14-6110-43c0-8ecd-1ec96dcabe87.png"
       />
       
       <div className="container mx-auto px-4">
         {/* Introduction Section */}
-        <section className="max-w-4xl mx-auto mb-16 text-center section-animate">
-          <h2 className="text-3xl font-bold text-ayodhya-maroon mb-6">The Sacred Banks of Saryu</h2>
-          <p className="text-lg mb-6">
+        <section className="max-w-4xl mx-auto mb-10 text-center section-animate">
+          <h2 className="text-3xl font-bold text-ayodhya-maroon mb-4">The Sacred Banks of Saryu</h2>
+          <p className="text-lg mb-4">
             The Saryu River (also known as Sarayu) holds immense religious significance in Hindu tradition. This holy river flows 
             through Ayodhya, and its ghats (riverbank steps) are considered sacred pilgrimage spots where devotees gather for 
             prayers, rituals, and to witness the mesmerizing aarti ceremonies.
@@ -34,22 +34,22 @@ const SaryuGhatPage = () => {
         </section>
         
         {/* Ghat Significance */}
-        <section className="mb-16">
-          <div className="grid md:grid-cols-2 gap-12 items-center section-animate">
+        <section className="mb-10">
+          <div className="grid md:grid-cols-2 gap-8 items-center section-animate">
             <div className="rounded-lg overflow-hidden shadow-xl">
               <img 
-                src="/lovable-uploads/5fbba0ac-ec87-4b26-bf98-1bfbb4f20315.png" 
+                src="/lovable-uploads/2ec52b14-6110-43c0-8ecd-1ec96dcabe87.png" 
                 alt="Saryu Ghat at Sunset" 
                 className="w-full h-auto"
               />
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-ayodhya-maroon mb-4">Spiritual Significance</h2>
-              <p className="mb-4">
+              <h2 className="text-2xl font-bold text-ayodhya-maroon mb-3">Spiritual Significance</h2>
+              <p className="mb-3">
                 For Hindus, taking a dip in the Saryu River is believed to cleanse one of sins and bring spiritual purification. 
                 The ghats are lined with numerous temples and ashrams, creating a deeply spiritual atmosphere.
               </p>
-              <p className="mb-4">
+              <p className="mb-3">
                 During religious festivals, especially Kartik Purnima and Dev Deepawali, thousands of devotees gather at the ghats 
                 to float diyas (oil lamps) in the river, creating a magical spectacle of floating lights.
               </p>
@@ -62,28 +62,28 @@ const SaryuGhatPage = () => {
         </section>
         
         {/* Main Ghats */}
-        <section className="mb-16 bg-ayodhya-cream p-8 rounded-lg section-animate">
-          <h2 className="text-2xl font-bold text-ayodhya-maroon mb-6 text-center">Prominent Ghats Along the Saryu</h2>
+        <section className="mb-10 bg-ayodhya-cream p-6 rounded-lg section-animate">
+          <h2 className="text-2xl font-bold text-ayodhya-maroon mb-4 text-center">Prominent Ghats Along the Saryu</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-ayodhya-maroon mb-3">Ram Ki Paidi</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div className="bg-white p-5 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-ayodhya-maroon mb-2">Ram Ki Paidi</h3>
               <p>
                 The most famous ghat with a series of steps leading to the river, recently renovated with 
                 beautiful architecture and lighting. This is where the grand evening aarti takes place.
               </p>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-ayodhya-maroon mb-3">Guptar Ghat</h3>
+            <div className="bg-white p-5 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-ayodhya-maroon mb-2">Guptar Ghat</h3>
               <p>
                 Located where Lord Ram is believed to have taken jal samadhi (water burial). A temple 
                 marks this sacred spot where devotees offer prayers to ancestors.
               </p>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-ayodhya-maroon mb-3">Janki Ghat</h3>
+            <div className="bg-white p-5 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-ayodhya-maroon mb-2">Janki Ghat</h3>
               <p>
                 Named after Goddess Sita (also called Janki), this peaceful ghat is popular for morning 
                 rituals and meditation due to its serene environment.
@@ -93,13 +93,13 @@ const SaryuGhatPage = () => {
         </section>
         
         {/* Activities */}
-        <section className="max-w-4xl mx-auto mb-16 section-animate">
-          <h2 className="text-2xl font-bold text-ayodhya-maroon mb-6 text-center">Activities at Saryu Ghat</h2>
+        <section className="max-w-4xl mx-auto mb-10 section-animate">
+          <h2 className="text-2xl font-bold text-ayodhya-maroon mb-4 text-center">Activities at Saryu Ghat</h2>
           
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-ayodhya-maroon mb-3">Religious Activities</h3>
-              <ul className="space-y-2">
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-white p-5 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-ayodhya-maroon mb-2">Religious Activities</h3>
+              <ul className="space-y-1">
                 <li><strong>Holy Dip:</strong> Taking a ritual bath in the sacred waters</li>
                 <li><strong>Evening Aarti:</strong> Witnessing the spectacular lamp ceremony at dusk</li>
                 <li><strong>Pind Daan:</strong> Performing ancestral rituals for departed souls</li>
@@ -108,9 +108,9 @@ const SaryuGhatPage = () => {
               </ul>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-ayodhya-maroon mb-3">Cultural Experiences</h3>
-              <ul className="space-y-2">
+            <div className="bg-white p-5 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-ayodhya-maroon mb-2">Cultural Experiences</h3>
+              <ul className="space-y-1">
                 <li><strong>Boat Rides:</strong> Peaceful rides along the river, especially at sunrise and sunset</li>
                 <li><strong>Photography:</strong> Capturing the colorful scenes and spiritual atmosphere</li>
                 <li><strong>Meditation:</strong> Many visitors find the riverbanks ideal for quiet contemplation</li>
@@ -122,14 +122,14 @@ const SaryuGhatPage = () => {
         </section>
         
         {/* Best Time to Visit */}
-        <section className="max-w-4xl mx-auto section-animate">
-          <h2 className="text-2xl font-bold text-ayodhya-maroon mb-6 text-center">Best Time to Visit</h2>
+        <section className="max-w-4xl mx-auto mb-6 section-animate">
+          <h2 className="text-2xl font-bold text-ayodhya-maroon mb-4 text-center">Best Time to Visit</h2>
           
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <p className="mb-4">
+          <div className="bg-white p-5 rounded-lg shadow-md">
+            <p className="mb-3">
               While Saryu Ghat can be visited throughout the year, certain times offer particularly special experiences:
             </p>
-            <ul className="space-y-4">
+            <ul className="space-y-3">
               <li className="flex items-start">
                 <span className="text-ayodhya-saffron mr-2">●</span>
                 <span><strong>October-November (Kartik Month):</strong> The ghats are beautifully decorated during Dev Deepawali when thousands of diyas illuminate the riverbanks.</span>
@@ -149,7 +149,7 @@ const SaryuGhatPage = () => {
             </ul>
           </div>
           
-          <div className="mt-8 text-center">
+          <div className="mt-5 text-center">
             <p className="text-lg italic text-ayodhya-maroon">
               "The Saryu's gentle flow carries with it centuries of devotion, myths, and the eternal presence of Lord Ram in his beloved Ayodhya."
             </p>

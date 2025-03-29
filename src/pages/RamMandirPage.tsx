@@ -11,7 +11,7 @@ const RamMandirPage = () => {
   }, []);
 
   return (
-    <div className="page-transition pb-12 pt-16">
+    <div className="page-transition pb-8 pt-16">
       <FlowerPetals />
       
       <PageBanner 
@@ -22,9 +22,9 @@ const RamMandirPage = () => {
       
       <div className="container mx-auto px-4">
         {/* Introduction Section */}
-        <section className="max-w-4xl mx-auto mb-16 text-center section-animate">
-          <h2 className="text-3xl font-bold text-ayodhya-maroon mb-6">The Divine Abode of Lord Ram</h2>
-          <p className="text-lg mb-6">
+        <section className="max-w-4xl mx-auto mb-10 text-center section-animate">
+          <h2 className="text-3xl font-bold text-ayodhya-maroon mb-4">The Divine Abode of Lord Ram</h2>
+          <p className="text-lg mb-4">
             The Ram Mandir in Ayodhya stands as a magnificent testament to faith and devotion at the birthplace of Lord Ram. 
             This sacred temple, built after centuries of anticipation, now welcomes millions of devotees from around the world.
           </p>
@@ -35,12 +35,12 @@ const RamMandirPage = () => {
         </section>
 
         {/* Official VIP Pass Link */}
-        <section className="max-w-4xl mx-auto mb-16 p-8 bg-ayodhya-cream rounded-lg shadow-lg section-animate">
-          <div className="flex items-center justify-center gap-3 mb-4">
+        <section className="max-w-4xl mx-auto mb-10 p-6 bg-ayodhya-cream rounded-lg shadow-lg section-animate">
+          <div className="flex items-center justify-center gap-3 mb-3">
             <LinkIcon className="text-ayodhya-saffron" size={28} />
             <h2 className="text-2xl font-bold text-ayodhya-maroon">Official Temple Website & VIP Pass</h2>
           </div>
-          <p className="text-center mb-6">
+          <p className="text-center mb-4">
             For official information and to book VIP passes for Ram Mandir darshan, please visit the official Sri Ram Janmabhoomi temple website.
           </p>
           <div className="flex justify-center">
@@ -57,16 +57,16 @@ const RamMandirPage = () => {
         </section>
         
         {/* Official Darshan & Aarti Timings */}
-        <section className="max-w-4xl mx-auto mb-16 section-animate">
-          <div className="flex items-center justify-center gap-3 mb-6">
+        <section className="max-w-4xl mx-auto mb-10 section-animate">
+          <div className="flex items-center justify-center gap-3 mb-4">
             <Clock className="text-ayodhya-saffron" size={28} />
             <h2 className="text-2xl font-bold text-ayodhya-maroon">Official Darshan & Aarti Timings</h2>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-ayodhya-maroon mb-4">Temple Free Darshan Timings</h3>
-              <ul className="space-y-2">
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-white p-5 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-ayodhya-maroon mb-3">Temple Free Darshan Timings</h3>
+              <ul className="space-y-1">
                 <li className="p-2 border-b border-gray-100">07:00 AM to 09:00 AM</li>
                 <li className="p-2 border-b border-gray-100">09:00 AM to 11:00 AM</li>
                 <li className="p-2 border-b border-gray-100">11:00 AM to 12:00 PM</li>
@@ -77,14 +77,14 @@ const RamMandirPage = () => {
               </ul>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-ayodhya-maroon mb-4">Free Aarti Darshan Timings</h3>
-              <ul className="space-y-2">
+            <div className="bg-white p-5 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-ayodhya-maroon mb-3">Free Aarti Darshan Timings</h3>
+              <ul className="space-y-1">
                 <li className="p-2 border-b border-gray-100"><strong>Mangal Aarti:</strong> 04:00 AM</li>
                 <li className="p-2 border-b border-gray-100"><strong>Shringar Aarti:</strong> 06:00 AM</li>
                 <li className="p-2 border-b border-gray-100"><strong>Shayan Aarti:</strong> 10:00 PM</li>
               </ul>
-              <div className="mt-6 p-4 bg-ayodhya-cream rounded-md">
+              <div className="mt-4 p-3 bg-ayodhya-cream rounded-md">
                 <p className="text-sm font-medium text-ayodhya-maroon">
                   <strong>Important Notification:</strong> The above timings will be reflected from 20th March, 2025 in the Booking receipt.
                 </p>
@@ -98,15 +98,15 @@ const RamMandirPage = () => {
         </section>
         
         {/* Temple Architecture */}
-        <section className="mb-16">
-          <div className="grid md:grid-cols-2 gap-12 items-center section-animate">
+        <section className="mb-10">
+          <div className="grid md:grid-cols-2 gap-8 items-center section-animate">
             <div>
-              <h2 className="text-2xl font-bold text-ayodhya-maroon mb-4">Temple Architecture</h2>
-              <p className="mb-4">
+              <h2 className="text-2xl font-bold text-ayodhya-maroon mb-3">Temple Architecture</h2>
+              <p className="mb-3">
                 Ram Mandir follows the traditional Nagara style of temple architecture, which is characterized by its 
                 distinctive towers and intricate stone carvings.
               </p>
-              <p className="mb-4">
+              <p className="mb-3">
                 The temple stands 161 feet tall with 5 mandaps (pavilions) and 160 pillars. The main structure is made 
                 without the use of iron, adhering to ancient architectural practices.
               </p>
@@ -126,25 +126,25 @@ const RamMandirPage = () => {
         </section>
         
         {/* Visit Planning */}
-        <section className="max-w-4xl mx-auto mb-16 section-animate">
-          <h2 className="text-2xl font-bold text-ayodhya-maroon mb-6 text-center">Plan Your Visit</h2>
+        <section className="max-w-4xl mx-auto mb-10 section-animate">
+          <h2 className="text-2xl font-bold text-ayodhya-maroon mb-4 text-center">Plan Your Visit</h2>
           
-          <div className="grid md:grid-cols-3 gap-6">
-            <Link to="/dharmshala" className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <h3 className="text-xl font-bold text-ayodhya-maroon mb-3">Accommodations</h3>
-              <p className="mb-4">Find the perfect place to stay during your spiritual journey, from traditional dharmshala to modern hotels.</p>
+          <div className="grid md:grid-cols-3 gap-5">
+            <Link to="/dharmshala" className="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <h3 className="text-xl font-bold text-ayodhya-maroon mb-2">Accommodations</h3>
+              <p className="mb-3">Find the perfect place to stay during your spiritual journey, from traditional dharmshala to modern hotels.</p>
               <span className="text-ayodhya-saffron font-medium">Explore options →</span>
             </Link>
             
-            <Link to="/bhojnalaya" className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <h3 className="text-xl font-bold text-ayodhya-maroon mb-3">Dining</h3>
-              <p className="mb-4">Experience authentic sattvic cuisine at various bhojnalayas and restaurants in the holy city.</p>
+            <Link to="/bhojnalaya" className="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <h3 className="text-xl font-bold text-ayodhya-maroon mb-2">Dining</h3>
+              <p className="mb-3">Experience authentic sattvic cuisine at various bhojnalayas and restaurants in the holy city.</p>
               <span className="text-ayodhya-saffron font-medium">View options →</span>
             </Link>
             
-            <Link to="/travel" className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <h3 className="text-xl font-bold text-ayodhya-maroon mb-3">Transportation</h3>
-              <p className="mb-4">Learn about the best ways to reach Ayodhya and navigate around the city during your pilgrimage.</p>
+            <Link to="/travel" className="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <h3 className="text-xl font-bold text-ayodhya-maroon mb-2">Transportation</h3>
+              <p className="mb-3">Learn about the best ways to reach Ayodhya and navigate around the city during your pilgrimage.</p>
               <span className="text-ayodhya-saffron font-medium">Plan travel →</span>
             </Link>
           </div>

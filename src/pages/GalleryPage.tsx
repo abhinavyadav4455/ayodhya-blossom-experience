@@ -49,7 +49,7 @@ const GalleryPage = () => {
   ];
 
   return (
-    <div className="page-transition pb-12 pt-16">
+    <div className="page-transition pb-8 pt-16">
       <FlowerPetals />
       
       <PageBanner 
@@ -58,14 +58,14 @@ const GalleryPage = () => {
         backgroundImage="/lovable-uploads/5fbba0ac-ec87-4b26-bf98-1bfbb4f20315.png"
       />
       
-      <div className="container mx-auto px-4 py-12">
-        <section className="mb-16 section-animate">
-          <h2 className="text-3xl font-bold text-ayodhya-maroon mb-8 text-center flex items-center justify-center gap-2">
+      <div className="container mx-auto px-4 py-8">
+        <section className="mb-10 section-animate">
+          <h2 className="text-3xl font-bold text-ayodhya-maroon mb-6 text-center flex items-center justify-center gap-2">
             <GalleryHorizontal className="text-ayodhya-saffron" />
             Sacred Places of Ayodhya
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {galleryItems.map((item) => (
               <div key={item.id} className="overflow-hidden rounded-lg shadow-lg group">
                 <div className="relative h-64 overflow-hidden">

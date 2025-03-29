@@ -48,25 +48,25 @@ const Header = () => {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-white shadow-md py-2'
-          : 'bg-transparent py-4'
+          ? 'bg-white shadow-md py-1'
+          : 'bg-transparent py-2'
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2">
-          <img src="/images/logo.png" alt="Ayodhya Blessings" className="h-10" />
-          <span className={`font-['Yatra_One'] text-xl ${isScrolled ? 'text-ayodhya-maroon' : 'text-ayodhya-maroon'}`}>
+          <img src="/images/logo.png" alt="Ayodhya Blessings" className="h-8" />
+          <span className={`font-['Yatra_One'] text-lg ${isScrolled ? 'text-ayodhya-maroon' : 'text-ayodhya-maroon'}`}>
             Ayodhya Blessings
           </span>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-1">
+        <nav className="hidden md:flex items-center">
           {navLinks.map((link) => (
             <Link
               key={link.path}
               to={link.path}
-              className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+              className={`px-2 py-1 text-sm font-medium transition-colors ${
                 location.pathname === link.path
                   ? 'text-ayodhya-saffron'
                   : `${isScrolled ? 'text-gray-700 hover:text-ayodhya-saffron' : 'text-gray-800 hover:text-ayodhya-saffron'}`
@@ -83,19 +83,19 @@ const Header = () => {
           onClick={toggleMobileMenu}
           aria-label="Toggle menu"
         >
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
       </div>
 
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200 animate-fade-in">
-          <div className="container mx-auto px-4 py-2">
+          <div className="container mx-auto px-4 py-1">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className={`block px-3 py-3 rounded-md text-base font-medium ${
+                className={`block px-2 py-2 text-sm font-medium ${
                   location.pathname === link.path
                     ? 'text-ayodhya-saffron'
                     : 'text-gray-700 hover:text-ayodhya-saffron'

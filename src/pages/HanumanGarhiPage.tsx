@@ -2,7 +2,7 @@
 import { useEffect } from 'react';
 import PageBanner from '../components/PageBanner';
 import FlowerPetals from '../components/FlowerPetals';
-import { MapPin, Clock, Link as LinkIcon } from 'lucide-react';
+import { MapPin, Clock } from 'lucide-react';
 
 const HanumanGarhiPage = () => {
   useEffect(() => {
@@ -10,7 +10,7 @@ const HanumanGarhiPage = () => {
   }, []);
 
   return (
-    <div className="page-transition pb-12 pt-16">
+    <div className="page-transition pb-8 pt-16">
       <FlowerPetals />
       
       <PageBanner 
@@ -21,9 +21,9 @@ const HanumanGarhiPage = () => {
       
       <div className="container mx-auto px-4">
         {/* Introduction Section */}
-        <section className="max-w-4xl mx-auto mb-16 text-center section-animate">
-          <h2 className="text-3xl font-bold text-ayodhya-maroon mb-6">The Divine Temple of Lord Hanuman</h2>
-          <p className="text-lg mb-6">
+        <section className="max-w-4xl mx-auto mb-10 text-center section-animate">
+          <h2 className="text-3xl font-bold text-ayodhya-maroon mb-4">The Divine Temple of Lord Hanuman</h2>
+          <p className="text-lg mb-4">
             Hanuman Garhi is a 10th-century temple dedicated to Lord Hanuman, situated on a hill in Ayodhya, just 76 steps high. 
             It is one of the most important temples in Ayodhya and a must-visit for devotees coming to the city.
           </p>
@@ -33,15 +33,15 @@ const HanumanGarhiPage = () => {
         </section>
         
         {/* Temple Architecture */}
-        <section className="mb-16">
-          <div className="grid md:grid-cols-2 gap-12 items-center section-animate">
+        <section className="mb-10">
+          <div className="grid md:grid-cols-2 gap-8 items-center section-animate">
             <div>
-              <h2 className="text-2xl font-bold text-ayodhya-maroon mb-4">Temple Design & Architecture</h2>
-              <p className="mb-4">
+              <h2 className="text-2xl font-bold text-ayodhya-maroon mb-3">Temple Design & Architecture</h2>
+              <p className="mb-3">
                 The Hanuman Garhi temple has a unique architectural design with 76 steps leading to the main temple area.
                 The temple houses a 6-inch-tall idol of Lord Hanuman, which is lavishly adorned with garlands and jewels.
               </p>
-              <p className="mb-4">
+              <p className="mb-3">
                 The idol depicts Hanuman with his mother Anjani seated on his lap, which is a rare form of Hanuman not seen in many temples.
               </p>
               <p>
@@ -59,25 +59,25 @@ const HanumanGarhiPage = () => {
         </section>
         
         {/* Temple Significance */}
-        <section className="mb-16 bg-ayodhya-cream p-8 rounded-lg section-animate">
-          <h2 className="text-2xl font-bold text-ayodhya-maroon mb-6 text-center">Spiritual Significance</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-ayodhya-maroon mb-3">Protector of Ayodhya</h3>
+        <section className="mb-10 bg-ayodhya-cream p-6 rounded-lg section-animate">
+          <h2 className="text-2xl font-bold text-ayodhya-maroon mb-4 text-center">Spiritual Significance</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div className="bg-white p-5 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-ayodhya-maroon mb-2">Protector of Ayodhya</h3>
               <p>
                 Hanuman Garhi is believed to be the place where Lord Hanuman stayed to protect Ayodhya and the birthplace of Lord Ram.
               </p>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-ayodhya-maroon mb-3">Blessings</h3>
+            <div className="bg-white p-5 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-ayodhya-maroon mb-2">Blessings</h3>
               <p>
                 It is believed that a visit to Ram Janmabhoomi is incomplete without first paying respects at Hanuman Garhi, as Lord Hanuman is the gatekeeper of Ayodhya.
               </p>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-ayodhya-maroon mb-3">Unique Form</h3>
+            <div className="bg-white p-5 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-ayodhya-maroon mb-2">Unique Form</h3>
               <p>
                 The temple houses a rare form of Lord Hanuman with his mother Anjani, symbolizing the profound mother-son relationship.
               </p>
@@ -86,16 +86,16 @@ const HanumanGarhiPage = () => {
         </section>
         
         {/* Visiting Information */}
-        <section className="max-w-4xl mx-auto mb-16 section-animate">
-          <h2 className="text-2xl font-bold text-ayodhya-maroon mb-6 text-center">Visitor Information</h2>
+        <section className="max-w-4xl mx-auto mb-10 section-animate">
+          <h2 className="text-2xl font-bold text-ayodhya-maroon mb-4 text-center">Visitor Information</h2>
           
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="flex items-center mb-3">
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-white p-5 rounded-lg shadow-md">
+              <div className="flex items-center mb-2">
                 <Clock className="text-ayodhya-saffron mr-2" />
                 <h3 className="text-xl font-bold text-ayodhya-maroon">Darshan Timings</h3>
               </div>
-              <ul className="space-y-2">
+              <ul className="space-y-1">
                 <li><strong>Morning:</strong> 5:00 AM - 12:00 PM</li>
                 <li><strong>Evening:</strong> 4:00 PM - 10:00 PM</li>
                 <li><strong>Aarti Timings:</strong> 6:00 AM (Morning Aarti) and 7:30 PM (Evening Aarti)</li>
@@ -103,12 +103,12 @@ const HanumanGarhiPage = () => {
               </ul>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="flex items-center mb-3">
+            <div className="bg-white p-5 rounded-lg shadow-md">
+              <div className="flex items-center mb-2">
                 <MapPin className="text-ayodhya-saffron mr-2" />
                 <h3 className="text-xl font-bold text-ayodhya-maroon">How to Reach</h3>
               </div>
-              <ul className="space-y-2">
+              <ul className="space-y-1">
                 <li><strong>Location:</strong> Located in the heart of Ayodhya, around 1 km from Ram Janmabhoomi</li>
                 <li><strong>By Auto/E-rickshaw:</strong> Easily accessible from any part of Ayodhya</li>
                 <li><strong>Walking Distance:</strong> 20 minutes from Ram Janmabhoomi complex</li>
