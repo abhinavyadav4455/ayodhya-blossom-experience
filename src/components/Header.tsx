@@ -32,12 +32,14 @@ const Header = () => {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Ram Mandir', path: '/ram-mandir' },
+    { name: 'Kanak Bhawan', path: '/kanak-bhawan' },
+    { name: 'Saryu Ghat', path: '/saryu-ghat' },
+    { name: 'Hanuman Garhi', path: '/hanuman-garhi' },
+    { name: 'Raja Dasharath Mahal', path: '/raja-dasharath-mahal' },
+    { name: 'Gallery', path: '/gallery' },
     { name: 'Dharmshala', path: '/dharmshala' },
-    { name: 'Bhojnalaya', path: '/bhojnalaya' },
-    { name: 'Restaurants', path: '/restaurants' },
     { name: 'Hotels', path: '/hotels' },
     { name: 'Travel', path: '/travel' },
-    { name: 'Prasad', path: '/prasad' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },
   ];

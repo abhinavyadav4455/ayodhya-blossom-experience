@@ -1,8 +1,9 @@
+
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import FlowerPetals from '../components/FlowerPetals';
 import Card from '../components/Card';
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, GalleryHorizontal, MapPin } from 'lucide-react';
 import { useAnimateOnScroll } from '../hooks/useAnimateOnScroll';
 
 const HomePage = () => {
@@ -19,6 +20,8 @@ const HomePage = () => {
   const testimonialsSectionRef = useAnimateOnScroll({ threshold: 0.2 });
   const featuredSectionRef = useAnimateOnScroll({ threshold: 0.2 });
   const registrationSectionRef = useAnimateOnScroll({ threshold: 0.2 });
+  const gallerySectionRef = useAnimateOnScroll({ threshold: 0.2 });
+  const placesSectionRef = useAnimateOnScroll({ threshold: 0.2 });
   
   return (
     <div className="page-transition pb-12">
@@ -68,7 +71,7 @@ const HomePage = () => {
             </div>
             <div className="rounded-lg overflow-hidden shadow-xl">
               <img 
-                src="/images/ayodhya-overview.jpg" 
+                src="/lovable-uploads/5fbba0ac-ec87-4b26-bf98-1bfbb4f20315.png" 
                 alt="Ayodhya City" 
                 className="w-full h-auto transition-transform duration-700 hover:scale-105"
               />
@@ -77,8 +80,72 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Sacred Places Section */}
+      <section className="bg-ayodhya-cream py-16 section-animate" ref={placesSectionRef}>
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <MapPin className="text-ayodhya-saffron" size={28} />
+            <h2 className="section-title mb-0">Sacred Places to Visit</h2>
+          </div>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+            <Link to="/ram-mandir" className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <div className="h-40 overflow-hidden">
+                <img src="/lovable-uploads/5fbba0ac-ec87-4b26-bf98-1bfbb4f20315.png" alt="Ram Mandir" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-4 text-center">
+                <h3 className="text-xl font-bold text-ayodhya-maroon">Ram Mandir</h3>
+              </div>
+            </Link>
+            
+            <Link to="/kanak-bhawan" className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <div className="h-40 overflow-hidden">
+                <img src="/lovable-uploads/1c7b6ffe-16a9-4b55-be3d-80fabe1e6c79.png" alt="Kanak Bhawan" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-4 text-center">
+                <h3 className="text-xl font-bold text-ayodhya-maroon">Kanak Bhawan</h3>
+              </div>
+            </Link>
+            
+            <Link to="/hanuman-garhi" className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <div className="h-40 overflow-hidden">
+                <img src="/lovable-uploads/5fbba0ac-ec87-4b26-bf98-1bfbb4f20315.png" alt="Hanuman Garhi" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-4 text-center">
+                <h3 className="text-xl font-bold text-ayodhya-maroon">Hanuman Garhi</h3>
+              </div>
+            </Link>
+            
+            <Link to="/raja-dasharath-mahal" className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <div className="h-40 overflow-hidden">
+                <img src="/lovable-uploads/5fbba0ac-ec87-4b26-bf98-1bfbb4f20315.png" alt="Raja Dasharath Mahal" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-4 text-center">
+                <h3 className="text-xl font-bold text-ayodhya-maroon">Dasharath Mahal</h3>
+              </div>
+            </Link>
+            
+            <Link to="/saryu-ghat" className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <div className="h-40 overflow-hidden">
+                <img src="/lovable-uploads/2ec52b14-6110-43c0-8ecd-1ec96dcabe87.png" alt="Saryu Ghat" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-4 text-center">
+                <h3 className="text-xl font-bold text-ayodhya-maroon">Saryu Ghat</h3>
+              </div>
+            </Link>
+          </div>
+          
+          <div className="text-center mt-8">
+            <Link to="/gallery" className="btn-primary inline-flex items-center gap-2">
+              <GalleryHorizontal size={18} />
+              View Photo Gallery
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Registration Section */}
-      <section className="bg-ayodhya-cream py-16 section-animate" ref={registrationSectionRef}>
+      <section className="bg-white py-16 section-animate" ref={registrationSectionRef}>
         <div className="container mx-auto px-4 text-center">
           <h2 className="section-title">Register for Your Divine Journey</h2>
           <p className="text-lg max-w-3xl mx-auto mb-8">
@@ -93,6 +160,51 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Official Link */}
+      <section className="container-custom bg-ayodhya-cream section-animate">
+        <div className="max-w-4xl mx-auto p-8 rounded-lg shadow-lg text-center">
+          <h2 className="text-3xl font-bold text-ayodhya-maroon mb-6">Official Temple Website</h2>
+          <p className="text-lg mb-6">
+            For official bookings and information about Sri Ram Janmabhoomi, please visit the official website.
+          </p>
+          <a 
+            href="https://srjbtkshetra.org/" 
+            target="_blank"
+            rel="noopener noreferrer" 
+            className="btn-primary text-lg px-8 py-3 inline-block"
+          >
+            Visit Official Website
+          </a>
+        </div>
+      </section>
+
+      {/* Gallery Preview Section */}
+      <section className="container-custom section-animate" ref={gallerySectionRef}>
+        <div className="flex items-center justify-center gap-3 mb-8">
+          <GalleryHorizontal className="text-ayodhya-saffron" size={28} />
+          <h2 className="section-title mb-0">Photo Gallery</h2>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="rounded-lg overflow-hidden shadow-md h-48">
+            <img src="/lovable-uploads/5fbba0ac-ec87-4b26-bf98-1bfbb4f20315.png" alt="Ram Mandir" className="w-full h-full object-cover" />
+          </div>
+          <div className="rounded-lg overflow-hidden shadow-md h-48">
+            <img src="/lovable-uploads/1c7b6ffe-16a9-4b55-be3d-80fabe1e6c79.png" alt="Kanak Bhawan" className="w-full h-full object-cover" />
+          </div>
+          <div className="rounded-lg overflow-hidden shadow-md h-48">
+            <img src="/lovable-uploads/2ec52b14-6110-43c0-8ecd-1ec96dcabe87.png" alt="Saryu Ghat" className="w-full h-full object-cover" />
+          </div>
+          <div className="rounded-lg overflow-hidden shadow-md h-48">
+            <img src="/lovable-uploads/35be26df-7393-4556-8be9-40672d27be4d.png" alt="Prasad" className="w-full h-full object-cover" />
+          </div>
+        </div>
+        <div className="text-center mt-8">
+          <Link to="/gallery" className="btn-primary">
+            View Full Gallery
+          </Link>
+        </div>
+      </section>
+
       {/* Featured Attractions */}
       <section className="bg-white py-16 section-animate" ref={featuredSectionRef}>
         <div className="container mx-auto px-4">
@@ -101,19 +213,19 @@ const HomePage = () => {
             <Card 
               title="Ram Mandir"
               description="Visit the magnificent Ram Mandir, a symbol of faith and devotion built at the birthplace of Lord Ram."
-              imageSrc="/images/ram-mandir.jpg"
+              imageSrc="/lovable-uploads/5fbba0ac-ec87-4b26-bf98-1bfbb4f20315.png"
               link="/ram-mandir"
             />
             <Card 
               title="Accommodations"
               description="Find the perfect place to stay during your visit to Ayodhya, from traditional dharmshala to modern hotels."
-              imageSrc="/images/accommodations.jpg"
+              imageSrc="/lovable-uploads/0a5bc000-941b-4d08-9797-1532b4b8b1c4.png"
               link="/hotels"
             />
             <Card 
               title="Dining"
               description="Experience authentic sattvic cuisine at various bhojnalayas and restaurants in the holy city."
-              imageSrc="/images/dining.jpg"
+              imageSrc="/lovable-uploads/35be26df-7393-4556-8be9-40672d27be4d.png"
               link="/bhojnalaya"
             />
           </div>

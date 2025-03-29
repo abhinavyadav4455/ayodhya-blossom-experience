@@ -1,7 +1,7 @@
-
 import { useEffect } from 'react';
 import PageBanner from '../components/PageBanner';
 import FlowerPetals from '../components/FlowerPetals';
+import { MapPin, Link as LinkIcon } from 'lucide-react';
 
 const TravelPage = () => {
   useEffect(() => {
@@ -14,23 +14,48 @@ const TravelPage = () => {
       
       <PageBanner 
         title="Travel to Ayodhya" 
-        subtitle="Planning Your Pilgrimage Journey" 
-        backgroundImage="/images/travel-banner.jpg"
+        subtitle="Plan your journey to the sacred city" 
+        backgroundImage="/lovable-uploads/e951e0a0-7b70-48a3-843c-f721376b6a80.png"
       />
       
       <div className="container mx-auto px-4">
-        {/* Introduction */}
-        <section className="max-w-4xl mx-auto mb-16 text-center">
-          <h2 className="text-3xl font-bold text-ayodhya-maroon mb-6">Journey to the Sacred City</h2>
-          <p className="text-lg">
-            Planning your trip to Ayodhya requires careful consideration of transportation options, travel routes, and local mobility. 
-            This guide provides essential information to help make your pilgrimage journey smooth and comfortable.
+        {/* Introduction Section */}
+        <section className="max-w-4xl mx-auto mb-16 text-center section-animate">
+          <h2 className="text-3xl font-bold text-ayodhya-maroon mb-6">Reaching the Divine City</h2>
+          <p className="text-lg mb-6">
+            Planning your journey to Ayodhya is an important part of your pilgrimage. The city is well-connected by various modes of transportation,
+            making it accessible from different parts of India.
           </p>
         </section>
+
+        {/* Official VIP Pass Link */}
+        <section className="max-w-4xl mx-auto mb-16 p-8 bg-ayodhya-cream rounded-lg shadow-lg section-animate">
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <LinkIcon className="text-ayodhya-saffron" size={28} />
+            <h2 className="text-2xl font-bold text-ayodhya-maroon">Official Temple Website</h2>
+          </div>
+          <p className="text-center mb-6">
+            For official information about transportation and to book VIP passes for Ram Mandir darshan, please visit the official Sri Ram Janmabhoomi temple website.
+          </p>
+          <div className="flex justify-center">
+            <a 
+              href="https://srjbtkshetra.org/" 
+              target="_blank"
+              rel="noopener noreferrer" 
+              className="btn-primary flex items-center gap-2 text-lg px-6 py-3 rounded-md"
+            >
+              <LinkIcon size={18} />
+              Visit Official Website
+            </a>
+          </div>
+        </section>
         
-        {/* Getting to Ayodhya */}
-        <section className="max-w-4xl mx-auto mb-16">
-          <h2 className="text-2xl font-bold text-ayodhya-maroon mb-8 text-center">Getting to Ayodhya</h2>
+        {/* Travel Information */}
+        <section className="mb-16 section-animate">
+          <h2 className="text-2xl font-bold text-ayodhya-maroon mb-8 text-center flex items-center justify-center gap-2">
+            <MapPin className="text-ayodhya-saffron" />
+            How to Reach Ayodhya
+          </h2>
           
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">

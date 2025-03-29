@@ -44,34 +44,40 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/" className="hover:text-ayodhya-yellow transition-colors">Home</Link></li>
               <li><Link to="/ram-mandir" className="hover:text-ayodhya-yellow transition-colors">Ram Mandir</Link></li>
+              <li><Link to="/gallery" className="hover:text-ayodhya-yellow transition-colors">Photo Gallery</Link></li>
+              <li><Link to="/register" className="hover:text-ayodhya-yellow transition-colors">Register for Yatra</Link></li>
               <li><Link to="/about" className="hover:text-ayodhya-yellow transition-colors">About Us</Link></li>
               <li><Link to="/contact" className="hover:text-ayodhya-yellow transition-colors">Contact</Link></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-xl font-bold mb-4">Stay & Eat</h3>
+            <h3 className="text-xl font-bold mb-4">Sacred Places</h3>
+            <ul className="space-y-2">
+              <li><Link to="/kanak-bhawan" className="hover:text-ayodhya-yellow transition-colors">Kanak Bhawan</Link></li>
+              <li><Link to="/hanuman-garhi" className="hover:text-ayodhya-yellow transition-colors">Hanuman Garhi</Link></li>
+              <li><Link to="/raja-dasharath-mahal" className="hover:text-ayodhya-yellow transition-colors">Raja Dasharath Mahal</Link></li>
+              <li><Link to="/saryu-ghat" className="hover:text-ayodhya-yellow transition-colors">Saryu Ghat</Link></li>
+              <li><a href="https://srjbtkshetra.org/" target="_blank" rel="noopener noreferrer" className="hover:text-ayodhya-yellow transition-colors">Official Temple Website</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="text-xl font-bold mb-4">Services</h3>
             <ul className="space-y-2">
               <li><Link to="/dharmshala" className="hover:text-ayodhya-yellow transition-colors">Dharmshala</Link></li>
               <li><Link to="/hotels" className="hover:text-ayodhya-yellow transition-colors">Hotels</Link></li>
               <li><Link to="/bhojnalaya" className="hover:text-ayodhya-yellow transition-colors">Bhojnalaya</Link></li>
               <li><Link to="/restaurants" className="hover:text-ayodhya-yellow transition-colors">Restaurants</Link></li>
+              <li><Link to="/travel" className="hover:text-ayodhya-yellow transition-colors">Travel</Link></li>
+              <li><Link to="/prasad" className="hover:text-ayodhya-yellow transition-colors">Prasad</Link></li>
             </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-xl font-bold mb-4">Contact Us</h3>
-            <address className="not-italic">
-              <p className="mb-2">Ayodhya, Uttar Pradesh</p>
-              <p className="mb-2">India</p>
-              <p className="mb-2">Email: info@ayodhyablessings.com</p>
-              <p>Phone: +91 1234567890</p>
-            </address>
           </div>
         </div>
         
         <div className="mt-8 pt-8 border-t border-gray-700 text-center">
-          <p>&copy; {new Date().getFullYear()} Ayodhya Blessings. All rights reserved.</p>
+          <p>Developed by Kartikey Vishwakarma | Contact: 6394650470 | Email: kartikeyvishwakarma@gmail.com</p>
+          <p className="mt-2">&copy; {new Date().getFullYear()} Ayodhya Blessings. All rights reserved.</p>
         </div>
       </div>
     </footer>

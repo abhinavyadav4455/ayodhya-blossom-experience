@@ -1,113 +1,204 @@
 import { useEffect } from 'react';
 import PageBanner from '../components/PageBanner';
 import FlowerPetals from '../components/FlowerPetals';
+import { Hotel, Link as LinkIcon } from 'lucide-react';
 
 const DharmshalaPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const dharmshalaList = [
-    {
-      id: 1,
-      name: 'Shri Ram Dharmshala',
-      description: 'A traditional dharamshala offering basic accommodations for pilgrims with clean rooms and essential facilities.',
-      address: 'Near Ram Mandir, Ayodhya',
-      image: '/lovable-uploads/0a5bc000-941b-4d08-9797-1532b4b8b1c4.png',
-      facilities: ['Free meals', 'Dormitory', 'Locker facility', 'Prayer hall']
-    },
-    {
-      id: 2,
-      name: 'Janaki Saran Dharmshala',
-      description: 'Family-friendly dharmshala with private rooms and attached bathrooms for a comfortable pilgrimage experience.',
-      address: 'Saket Colony, Ayodhya',
-      image: '/lovable-uploads/0a5bc000-941b-4d08-9797-1532b4b8b1c4.png',
-      facilities: ['Private rooms', 'Attached bathrooms', 'Dining hall', 'Temple within premises']
-    },
-    {
-      id: 3,
-      name: 'Bharat Kund Dharmshala',
-      description: 'Located near the historic Bharat Kund, offering peaceful accommodations for spiritual seekers.',
-      address: 'Bharat Kund Road, Ayodhya',
-      image: '/lovable-uploads/0a5bc000-941b-4d08-9797-1532b4b8b1c4.png',
-      facilities: ['Garden view', 'Meditation area', 'Free breakfast', 'Reading room']
-    },
-    {
-      id: 4,
-      name: 'Dashrath Mahal Dharmshala',
-      description: 'Named after King Dashrath, this dharmshala offers traditional hospitality with modern amenities.',
-      address: 'Main Market Road, Ayodhya',
-      image: '/lovable-uploads/0a5bc000-941b-4d08-9797-1532b4b8b1c4.png',
-      facilities: ['AC rooms available', 'Generator backup', 'Ayurvedic treatment center', 'Travel assistance']
-    },
-    {
-      id: 5,
-      name: 'Sarayu Kunj Dharmshala',
-      description: 'Riverside dharmshala offering scenic views of the Sarayu River and serene environment for pilgrims.',
-      address: 'Sarayu Ghat, Ayodhya',
-      image: '/lovable-uploads/0a5bc000-941b-4d08-9797-1532b4b8b1c4.png',
-      facilities: ['River view', 'Ghat access', 'Evening aarti', 'Cultural programs']
-    },
-    {
-      id: 6,
-      name: 'Hanuman Garhi Dharmshala',
-      description: 'Located near the famous Hanuman Garhi temple, offering convenient accommodations for devotees.',
-      address: 'Hanuman Garhi Road, Ayodhya',
-      image: '/lovable-uploads/0a5bc000-941b-4d08-9797-1532b4b8b1c4.png',
-      facilities: ['Temple view', '24-hour reception', 'Pure vegetarian meals', 'Pilgrim guide services']
-    }
-  ];
-
   return (
     <div className="page-transition pb-12 pt-16">
       <FlowerPetals />
       
       <PageBanner 
-        title="Dharmshala" 
-        subtitle="Traditional Pilgrim Accommodations" 
+        title="Dharmshala in Ayodhya" 
+        subtitle="Traditional pilgrim accommodation" 
         backgroundImage="/lovable-uploads/0a5bc000-941b-4d08-9797-1532b4b8b1c4.png"
       />
       
       <div className="container mx-auto px-4">
-        <section className="max-w-4xl mx-auto mb-16 text-center">
-          <h2 className="text-3xl font-bold text-ayodhya-maroon mb-6">Stay in Sacred Simplicity</h2>
-          <p className="text-lg">
-            Dharmshala accommodations in Ayodhya offer pilgrims a simple, affordable, and spiritually oriented place to stay during their visit. 
-            These traditional lodgings are often managed by temples or charitable trusts and provide basic amenities with a focus on cleanliness and comfort.
+        <section className="max-w-4xl mx-auto mb-16 text-center section-animate">
+          <h2 className="text-3xl font-bold text-ayodhya-maroon mb-6">Traditional Pilgrim Accommodations</h2>
+          <p className="text-lg mb-6">
+            Dharmshala in Ayodhya provide affordable and comfortable accommodation options for pilgrims visiting the holy city.
+            These traditional rest houses offer basic amenities in a spiritual environment, perfect for those seeking an authentic pilgrimage experience.
           </p>
         </section>
+
+        <section className="max-w-4xl mx-auto mb-16 p-8 bg-ayodhya-cream rounded-lg shadow-lg section-animate">
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <LinkIcon className="text-ayodhya-saffron" size={28} />
+            <h2 className="text-2xl font-bold text-ayodhya-maroon">Official Temple Website</h2>
+          </div>
+          <p className="text-center mb-6">
+            For official information about dharmshala accommodations and to book VIP passes for Ram Mandir darshan, please visit the official Sri Ram Janmabhoomi temple website.
+          </p>
+          <div className="flex justify-center">
+            <a 
+              href="https://srjbtkshetra.org/" 
+              target="_blank"
+              rel="noopener noreferrer" 
+              className="btn-primary flex items-center gap-2 text-lg px-6 py-3 rounded-md"
+            >
+              <LinkIcon size={18} />
+              Visit Official Website
+            </a>
+          </div>
+        </section>
         
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-ayodhya-maroon mb-8 text-center">Popular Dharmshala Options</h2>
+        <section className="mb-16 section-animate">
+          <h2 className="text-2xl font-bold text-ayodhya-maroon mb-8 text-center flex items-center justify-center gap-2">
+            <Hotel className="text-ayodhya-saffron" />
+            Popular Dharmshala
+          </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {dharmshalaList.map((dharmshala) => (
-              <div key={dharmshala.id} className="card-custom h-full flex flex-col section-animate">
-                <div className="image-container h-48">
-                  <img 
-                    src={dharmshala.image} 
-                    alt={dharmshala.name} 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-5 flex flex-col flex-grow">
-                  <h3 className="text-xl font-bold text-ayodhya-maroon mb-2">{dharmshala.name}</h3>
-                  <p className="text-gray-700 mb-3">{dharmshala.description}</p>
-                  <p className="text-gray-600 mb-4"><strong>Address:</strong> {dharmshala.address}</p>
-                  
-                  <div className="mt-auto">
-                    <h4 className="font-semibold mb-2">Facilities:</h4>
-                    <ul className="flex flex-wrap gap-2">
-                      {dharmshala.facilities.map((facility, index) => (
-                        <li key={index} className="bg-ayodhya-cream text-ayodhya-maroon px-3 py-1 rounded-full text-sm">
-                          {facility}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div key={1} className="card-custom h-full flex flex-col section-animate">
+              <div className="image-container h-48">
+                <img 
+                  src="/lovable-uploads/0a5bc000-941b-4d08-9797-1532b4b8b1c4.png" 
+                  alt="Shri Ram Dharmshala" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-5 flex flex-col flex-grow">
+                <h3 className="text-xl font-bold text-ayodhya-maroon mb-2">Shri Ram Dharmshala</h3>
+                <p className="text-gray-700 mb-3">A traditional dharamshala offering basic accommodations for pilgrims with clean rooms and essential facilities.</p>
+                <p className="text-gray-600 mb-4"><strong>Address:</strong> Near Ram Mandir, Ayodhya</p>
+                
+                <div className="mt-auto">
+                  <h4 className="font-semibold mb-2">Facilities:</h4>
+                  <ul className="flex flex-wrap gap-2">
+                    <li className="bg-ayodhya-cream text-ayodhya-maroon px-3 py-1 rounded-full text-sm">Free meals</li>
+                    <li className="bg-ayodhya-cream text-ayodhya-maroon px-3 py-1 rounded-full text-sm">Dormitory</li>
+                    <li className="bg-ayodhya-cream text-ayodhya-maroon px-3 py-1 rounded-full text-sm">Locker facility</li>
+                    <li className="bg-ayodhya-cream text-ayodhya-maroon px-3 py-1 rounded-full text-sm">Prayer hall</li>
+                  </ul>
                 </div>
               </div>
-            ))}
+            </div>
+            <div key={2} className="card-custom h-full flex flex-col section-animate">
+              <div className="image-container h-48">
+                <img 
+                  src="/lovable-uploads/0a5bc000-941b-4d08-9797-1532b4b8b1c4.png" 
+                  alt="Janaki Saran Dharmshala" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-5 flex flex-col flex-grow">
+                <h3 className="text-xl font-bold text-ayodhya-maroon mb-2">Janaki Saran Dharmshala</h3>
+                <p className="text-gray-700 mb-3">Family-friendly dharmshala with private rooms and attached bathrooms for a comfortable pilgrimage experience.</p>
+                <p className="text-gray-600 mb-4"><strong>Address:</strong> Saket Colony, Ayodhya</p>
+                
+                <div className="mt-auto">
+                  <h4 className="font-semibold mb-2">Facilities:</h4>
+                  <ul className="flex flex-wrap gap-2">
+                    <li className="bg-ayodhya-cream text-ayodhya-maroon px-3 py-1 rounded-full text-sm">Private rooms</li>
+                    <li className="bg-ayodhya-cream text-ayodhya-maroon px-3 py-1 rounded-full text-sm">Attached bathrooms</li>
+                    <li className="bg-ayodhya-cream text-ayodhya-maroon px-3 py-1 rounded-full text-sm">Dining hall</li>
+                    <li className="bg-ayodhya-cream text-ayodhya-maroon px-3 py-1 rounded-full text-sm">Temple within premises</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div key={3} className="card-custom h-full flex flex-col section-animate">
+              <div className="image-container h-48">
+                <img 
+                  src="/lovable-uploads/0a5bc000-941b-4d08-9797-1532b4b8b1c4.png" 
+                  alt="Bharat Kund Dharmshala" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-5 flex flex-col flex-grow">
+                <h3 className="text-xl font-bold text-ayodhya-maroon mb-2">Bharat Kund Dharmshala</h3>
+                <p className="text-gray-700 mb-3">Located near the historic Bharat Kund, offering peaceful accommodations for spiritual seekers.</p>
+                <p className="text-gray-600 mb-4"><strong>Address:</strong> Bharat Kund Road, Ayodhya</p>
+                
+                <div className="mt-auto">
+                  <h4 className="font-semibold mb-2">Facilities:</h4>
+                  <ul className="flex flex-wrap gap-2">
+                    <li className="bg-ayodhya-cream text-ayodhya-maroon px-3 py-1 rounded-full text-sm">Garden view</li>
+                    <li className="bg-ayodhya-cream text-ayodhya-maroon px-3 py-1 rounded-full text-sm">Meditation area</li>
+                    <li className="bg-ayodhya-cream text-ayodhya-maroon px-3 py-1 rounded-full text-sm">Free breakfast</li>
+                    <li className="bg-ayodhya-cream text-ayodhya-maroon px-3 py-1 rounded-full text-sm">Reading room</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div key={4} className="card-custom h-full flex flex-col section-animate">
+              <div className="image-container h-48">
+                <img 
+                  src="/lovable-uploads/0a5bc000-941b-4d08-9797-1532b4b8b1c4.png" 
+                  alt="Dashrath Mahal Dharmshala" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-5 flex flex-col flex-grow">
+                <h3 className="text-xl font-bold text-ayodhya-maroon mb-2">Dashrath Mahal Dharmshala</h3>
+                <p className="text-gray-700 mb-3">Named after King Dashrath, this dharmshala offers traditional hospitality with modern amenities.</p>
+                <p className="text-gray-600 mb-4"><strong>Address:</strong> Main Market Road, Ayodhya</p>
+                
+                <div className="mt-auto">
+                  <h4 className="font-semibold mb-2">Facilities:</h4>
+                  <ul className="flex flex-wrap gap-2">
+                    <li className="bg-ayodhya-cream text-ayodhya-maroon px-3 py-1 rounded-full text-sm">AC rooms available</li>
+                    <li className="bg-ayodhya-cream text-ayodhya-maroon px-3 py-1 rounded-full text-sm">Generator backup</li>
+                    <li className="bg-ayodhya-cream text-ayodhya-maroon px-3 py-1 rounded-full text-sm">Ayurvedic treatment center</li>
+                    <li className="bg-ayodhya-cream text-ayodhya-maroon px-3 py-1 rounded-full text-sm">Travel assistance</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div key={5} className="card-custom h-full flex flex-col section-animate">
+              <div className="image-container h-48">
+                <img 
+                  src="/lovable-uploads/0a5bc000-941b-4d08-9797-1532b4b8b1c4.png" 
+                  alt="Sarayu Kunj Dharmshala" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-5 flex flex-col flex-grow">
+                <h3 className="text-xl font-bold text-ayodhya-maroon mb-2">Sarayu Kunj Dharmshala</h3>
+                <p className="text-gray-700 mb-3">Riverside dharmshala offering scenic views of the Sarayu River and serene environment for pilgrims.</p>
+                <p className="text-gray-600 mb-4"><strong>Address:</strong> Sarayu Ghat, Ayodhya</p>
+                
+                <div className="mt-auto">
+                  <h4 className="font-semibold mb-2">Facilities:</h4>
+                  <ul className="flex flex-wrap gap-2">
+                    <li className="bg-ayodhya-cream text-ayodhya-maroon px-3 py-1 rounded-full text-sm">River view</li>
+                    <li className="bg-ayodhya-cream text-ayodhya-maroon px-3 py-1 rounded-full text-sm">Ghat access</li>
+                    <li className="bg-ayodhya-cream text-ayodhya-maroon px-3 py-1 rounded-full text-sm">Evening aarti</li>
+                    <li className="bg-ayodhya-cream text-ayodhya-maroon px-3 py-1 rounded-full text-sm">Cultural programs</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div key={6} className="card-custom h-full flex flex-col section-animate">
+              <div className="image-container h-48">
+                <img 
+                  src="/lovable-uploads/0a5bc000-941b-4d08-9797-1532b4b8b1c4.png" 
+                  alt="Hanuman Garhi Dharmshala" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-5 flex flex-col flex-grow">
+                <h3 className="text-xl font-bold text-ayodhya-maroon mb-2">Hanuman Garhi Dharmshala</h3>
+                <p className="text-gray-700 mb-3">Located near the famous Hanuman Garhi temple, offering convenient accommodations for devotees.</p>
+                <p className="text-gray-600 mb-4"><strong>Address:</strong> Hanuman Garhi Road, Ayodhya</p>
+                
+                <div className="mt-auto">
+                  <h4 className="font-semibold mb-2">Facilities:</h4>
+                  <ul className="flex flex-wrap gap-2">
+                    <li className="bg-ayodhya-cream text-ayodhya-maroon px-3 py-1 rounded-full text-sm">Temple view</li>
+                    <li className="bg-ayodhya-cream text-ayodhya-maroon px-3 py-1 rounded-full text-sm">24-hour reception</li>
+                    <li className="bg-ayodhya-cream text-ayodhya-maroon px-3 py-1 rounded-full text-sm">Pure vegetarian meals</li>
+                    <li className="bg-ayodhya-cream text-ayodhya-maroon px-3 py-1 rounded-full text-sm">Pilgrim guide services</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         

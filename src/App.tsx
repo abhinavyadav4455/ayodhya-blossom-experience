@@ -20,6 +20,9 @@ import ContactPage from "./pages/ContactPage";
 import RegisterPage from "./pages/RegisterPage";
 import KanakBhawanPage from "./pages/KanakBhawanPage";
 import SaryuGhatPage from "./pages/SaryuGhatPage";
+import GalleryPage from "./pages/GalleryPage";
+import HanumanGarhiPage from "./pages/HanumanGarhiPage";
+import RajaDasharathMahalPage from "./pages/RajaDasharathMahalPage";
 
 const queryClient = new QueryClient();
 
@@ -37,6 +40,9 @@ const App = () => (
               <Route path="/ram-mandir" element={<RamMandirPage />} />
               <Route path="/kanak-bhawan" element={<KanakBhawanPage />} />
               <Route path="/saryu-ghat" element={<SaryuGhatPage />} />
+              <Route path="/hanuman-garhi" element={<HanumanGarhiPage />} />
+              <Route path="/raja-dasharath-mahal" element={<RajaDasharathMahalPage />} />
+              <Route path="/gallery" element={<GalleryPage />} />
               <Route path="/dharmshala" element={<DharmshalaPage />} />
               <Route path="/bhojnalaya" element={<BhojnalayaPage />} />
               <Route path="/restaurants" element={<RestaurantsPage />} />
