@@ -1,69 +1,104 @@
-# Welcome to your Lovable project
+# 🕉️ Ayodhya Blossom Experience
 
-## Project info
+<div align="center">
 
-**URL**: https://lovable.dev/projects/c330335a-cb81-4744-b743-f02b5d71016b
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 
-## How can I edit this code?
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png">
 
-There are several ways of editing your application.
+### 🙏 Discover the Divine Beauty of Ayodhya 🙏
 
-**Use Lovable**
+_A modern web application showcasing the spiritual heart of India - Ayodhya, the sacred birthplace of Lord Ram_
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c330335a-cb81-4744-b743-f02b5d71016b) and start prompting.
+[View Demo](https://ayodhya-blossom.vercel.app) · [Report Bug](https://github.com/KeyToCoding/ayodhya-blossom-experience/issues) · [Request Feature](https://github.com/KeyToCoding/ayodhya-blossom-experience/issues)
 
-Changes made via Lovable will be committed automatically to this repo.
+</div>
 
-**Use your preferred IDE**
+## ✨ Features
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+<img align="right" width="300" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/demo/demo.gif"/>
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+🏨 **Hotels Directory**
+- Curated list of accommodations
+- Detailed amenities and pricing
+- Direct booking links
 
-Follow these steps:
+🚗 **Travel Guide**
+- Transportation options
+- Interactive maps
+- Local travel tips
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+🌊 **Saryu Ghat Experience**
+- Sacred river information
+- Aarti timings
+- Photo gallery
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+📝 **Temple Registration**
+- Easy registration process
+- VIP pass booking
+- Queue management
 
-# Step 3: Install the necessary dependencies.
-npm i
+🎨 **Modern Design**
+- Responsive layout
+- Smooth animations
+- Intuitive navigation
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## 🚀 Quick Start
+
+```bash
+# Clone this divine repository
+git clone https://github.com/KeyToCoding/ayodhya-blossom-experience.git
+
+# Enter the sacred directory
+cd ayodhya-blossom-experience
+
+# Install the blessings (dependencies)
+npm install
+
+# Start your spiritual journey
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 🛠️ Built With Love Using
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- ⚛️ **React** - UI Library
+- 🔷 **TypeScript** - Type Safety
+- 🎨 **Tailwind CSS** - Styling
+- ⚡ **Vite** - Build Tool
+- 🎭 **Shadcn UI** - Component Library
+- 📱 **Responsive Design** - Mobile First
 
-**Use GitHub Codespaces**
+## 👨‍💻 Developer
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+<div align="center">
+  <img src="/images/developer-kartik.jpg" width="150px" style="border-radius: 50%"/>
+  
+  ### Kartikey
+  _Full Stack Developer_
 
-## What technologies are used for this project?
+  [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/KeyToCoding)
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kartikey28/)
+</div>
 
-This project is built with .
+## 🤝 Contributing
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Your contributions make the Ayodhya Blossom Experience even more divine! Any contributions you make are **greatly appreciated**.
 
-## How can I deploy this project?
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-Simply open [Lovable](https://lovable.dev/projects/c330335a-cb81-4744-b743-f02b5d71016b) and click on Share -> Publish.
+## 📜 License
 
-## I want to use a custom domain - is that possible?
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+<div align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png">
+  
+  ### 🙏 Jai Shri Ram 🙏
+</div>

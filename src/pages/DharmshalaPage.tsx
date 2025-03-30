@@ -2,11 +2,14 @@ import { useEffect } from 'react';
 import PageBanner from '../components/PageBanner';
 import FlowerPetals from '../components/FlowerPetals';
 import { Hotel, Link as LinkIcon } from 'lucide-react';
+import { useAnimateOnScroll } from '../hooks/useAnimateOnScroll';
 
 const DharmshalaPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  useAnimateOnScroll();
 
   return (
     <div className="page-transition pb-12 pt-16">

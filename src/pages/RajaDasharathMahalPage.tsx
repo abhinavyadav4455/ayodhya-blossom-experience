@@ -1,13 +1,15 @@
-
 import { useEffect } from 'react';
 import PageBanner from '../components/PageBanner';
 import FlowerPetals from '../components/FlowerPetals';
 import { MapPin, Clock } from 'lucide-react';
+import { useAnimateOnScroll } from '../hooks/useAnimateOnScroll';
 
 const RajaDasharathMahalPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  useAnimateOnScroll();
 
   return (
     <div className="page-transition pb-8 pt-16">

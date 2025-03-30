@@ -1,10 +1,9 @@
-
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import PageBanner from '../components/PageBanner';
 import FlowerPetals from '../components/FlowerPetals';
 import { GalleryHorizontal, Camera } from 'lucide-react';
 
-const GalleryPage = () => {
+const GalleryPage: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -59,6 +58,7 @@ const GalleryPage = () => {
       />
       
       <div className="container mx-auto px-4 py-6">
+        {/* First Section - Gallery */}
         <section className="mb-8 section-animate">
           <h2 className="text-3xl font-bold text-ayodhya-maroon mb-4 text-center flex items-center justify-center gap-2">
             <GalleryHorizontal className="text-ayodhya-saffron" />
@@ -100,6 +100,7 @@ const GalleryPage = () => {
           </div>
         </section>
 
+        {/* Second Section - Historical Significance */}
         <section className="mb-8 section-animate">
           <h2 className="text-2xl font-bold text-ayodhya-maroon mb-4 text-center flex items-center justify-center gap-2">
             <Camera className="text-ayodhya-saffron" />
@@ -140,6 +141,7 @@ const GalleryPage = () => {
           </div>
         </section>
         
+        {/* Third Section - Divine Journey */}
         <section className="mb-8 section-animate">
           <h2 className="text-2xl font-bold text-ayodhya-maroon mb-4 text-center">
             दिव्य अयोध्या यात्रा - Divine Ayodhya Journey

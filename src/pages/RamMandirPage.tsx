@@ -1,14 +1,16 @@
-
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PageBanner from '../components/PageBanner';
 import FlowerPetals from '../components/FlowerPetals';
 import { Clock, LinkIcon, MapPin } from 'lucide-react';
+import { useAnimateOnScroll } from '../hooks/useAnimateOnScroll';
 
 const RamMandirPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  useAnimateOnScroll();
 
   return (
     <div className="page-transition pb-8 pt-16">
