@@ -74,7 +74,8 @@ npm run dev
 ## 👨‍💻 Developer
 
 <div align="center">
-  <img src="/images/developer-kartik.jpg" width="150px" style="border-radius: 50%"/>
+  <img src="![WhatsApp Image 2025-03-30 at 12 40 03_22e5941d](https://github.com/user-attachments/assets/18326d15-28c8-43fa-a6b6-8fbf390d3923)
+" width="150px" style="border-radius: 50%"/>
   
   ### Kartikey
   _Full Stack Developer_
