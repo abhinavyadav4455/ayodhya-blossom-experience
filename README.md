@@ -103,3 +103,32 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   
   ### 🙏 Jai Shri Ram 🙏
 </div>
+# 🌸 Ayodhya Blossom Experience  
+
+[![Vercel Deployment](https://img.shields.io/badge/Deployed_on-Vercel-black?logo=vercel)](https://ayodhya-blossom-experience.vercel.app/)  
+![Next.js](https://img.shields.io/badge/Next.js-13-blue?logo=nextdotjs)  
+![Three.js](https://img.shields.io/badge/Three.js-WebGL-orange)  
+
+An immersive 3D journey through Ayodhya's spiritual heritage, blending ancient wisdom with modern web technologies.  
+
+## ✨ Preview  
+
+<div align="center">  
+  <img src="https://i.imgur.com/JKQmX0h.png" width="45%" alt="Main Temple View"/>  
+  <img src="https://i.imgur.com/Lp3mV9P.png" width="45%" alt="Interactive Timeline"/>  
+</div>  
+
+## 🚀 Features  
+
+| Component | Technology |  
+|-----------|------------|  
+| 3D Temple Model | Three.js + GLTFLoader |  
+| Scroll Animations | GSAP + ScrollTrigger |  
+| Particle Effects | Shader Programming |  
+| Mobile Optimization | Responsive Design |  
+
+## 🛠️ Development  
+
+1. **Clone**  
+   ```bash   
+   git clone https://github.com/your-repo/ayodhya-blossom.git  
